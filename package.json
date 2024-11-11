@@ -5,11 +5,10 @@
   "main": "tailwind.config.js",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "build": "npm install && npx tailwindcss build -i ./src/css/tailwind.css -o ./dist/build/tailwind.css",
-    "watch": "npx tailwindcss build -i src/css/tailwind.css -o dist/build/tailwind.css --watch"
+  "dev": "vite",
+  "lint": "eslint .",
+  "preview": "vite preview",
+  "build": "vite build"
   },
   "dependencies": {
     "react": "^18.3.1",
