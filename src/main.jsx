@@ -26,7 +26,11 @@ const router = createBrowserRouter([
       },
     ],
   },
-]);
+],
+  {
+    basename: '/Extra_julekalender'
+  }
+);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
