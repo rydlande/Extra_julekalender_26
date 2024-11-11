@@ -2,7 +2,6 @@
   "name": "extra-julekalender",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://rydlande.github.io/Extra_julekalender/",
   "main": "tailwind.config.js",
   "type": "module",
   "scripts": {
