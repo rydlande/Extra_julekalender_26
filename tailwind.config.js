@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors');
+
 export default {
   content: [
     './index.html',
@@ -19,6 +21,6 @@ export default {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [require('tailwindcss'), require('autoprefixer')],
 }
 
