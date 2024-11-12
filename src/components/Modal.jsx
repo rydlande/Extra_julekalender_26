@@ -1,5 +1,5 @@
 function Modal({ content, onClose }) {
-  if (!content) return null; // Safeguard in case content is missing
+  if (!content) return null;
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
@@ -11,7 +11,6 @@ function Modal({ content, onClose }) {
           &times;
         </button>
 
-        {/* Dynamic Content Display */}
         {content.type === 'image' && (
           <img src={content.src} alt={content.description} className="w-full h-auto" />
         )}
