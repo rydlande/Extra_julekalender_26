@@ -13,6 +13,8 @@ A React-based Christmas calendar app with a dynamic modal for each day. Includes
 ### Cloning the Repository
 ```
 git clone https://github.com/rydlande/Extra_julekalender.git
+```
+```
 cd Extra_julekalender
 ```
 
