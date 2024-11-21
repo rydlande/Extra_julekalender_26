@@ -21,12 +21,12 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        'extra-bold': ['ExtraRound-Bold', 'sans-serif'],
-        'extra-light': ['ExtraRound-Light', 'sans-serif'],
-        'extra-medium': ['ExtraRound-Medium', 'sans-serif'],
-        'extra-regular': ['ExtraRound-Regular', 'sans-serif'],
-        'romy': ['Romy', 'sans-serif']
-      }
+        'ExtraRound-Regular': ['ExtraRound-Regular', 'sans-serif'],
+        'ExtraRound-Bold': ['ExtraRound-Bold', 'sans-serif'],
+        'ExtraRound-Light': ['ExtraRound-Light', 'sans-serif'],
+        'ExtraRound-Medium': ['ExtraRound-Medium', 'sans-serif'],
+        'Romy': ['Romy', 'sans-serif'],
+      },
     },
   },
   plugins: [
