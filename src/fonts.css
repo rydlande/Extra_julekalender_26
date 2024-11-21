@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'ExtraRound-Bold';
+  src: url('/fonts/ExtraRound-Bold.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ExtraRound-Light';
+  src: url('/fonts/ExtraRound-Light.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ExtraRound-Medium';
+  src: url('/fonts/ExtraRound-Medium.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ExtraRound-Regular';
+  src: url('/fonts/ExtraRound-Regular.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Romy';
+  src: url('/fonts/Romy.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
