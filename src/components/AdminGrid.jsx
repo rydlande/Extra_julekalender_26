@@ -17,7 +17,7 @@ function AdminGrid() {
         <div
           key={day}
           onClick={() => setSelectedDay(day)}
-          className={`cursor-pointer p-5 h-24 w-24 flex items-center justify-center text-center text-4xl font-bold rounded-sm ${
+          className={`cursor-pointer p-5 h-32 w-32 flex items-center justify-center text-center text-4xl font-bold rounded-sm ${
             isDoorOpen(day) ? 'bg-red-dark text-[#ae1322]' : 'bg-red text-white'
           }`}
         >
