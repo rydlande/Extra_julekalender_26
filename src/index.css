@@ -2,3 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'ExtraRound-Regular';
+  src: url('../public/fonts/ExtraRound-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'ExtraRound-Light';
+  src: url('/fonts/ExtraRound-Light.ttf');
+}
+
+@font-face {
+  font-family: 'ExtraRound-Medium';
+  src: url('/fonts/ExtraRound-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'ExtraRound-Bold';
+  src: url('/fonts/ExtraRound-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Romy';
+  src: url('/fonts/Romy.ttf');
+} 

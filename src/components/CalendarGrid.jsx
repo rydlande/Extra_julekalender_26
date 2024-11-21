@@ -22,9 +22,9 @@ function CalendarGrid() {
         <div
           key={day}
           onClick={() => isDoorOpen(day) && setSelectedDay(day)}
-          className={`cursor-pointer p-5 h-24 w-24 flex items-center justify-center text-center text-4xl font-bold rounded-sm ${
+          className={`cursor-pointer h-24 w-24 flex items-center justify-center text-center rounded-sm font-ExtraRound-Medium text-[70px] ${
             day === currentDay && currentMonth === 10 
-              ? 'bg-yellow-400 text-yellow ring-4 ring-yellow' // Custom styling for today
+              ? 'bg-yellow-400 text-yellow ring-4 ring-yellow'
               : isDoorOpen(day)
               ? 'bg-red-dark text-[#ae1322] ring-8 ring-offset-1 ring-offset-red-dark ring-red-dark'
               : 'bg-red text-white pointer-events-none ring-[6px] ring-offset-[0.5px] ring-offset-red-dark ring-red box-border'
