@@ -13,9 +13,9 @@ function Calendar() {
       <div className='flex flex-col items-center justify-center'>
         <CalendarGrid />
       </div>
-      <footer className='pt-12 flex items-center justify-center'>
+      {/* <footer className='pt-12 flex items-center justify-center'>
         <img src={extra} alt="Extra logo" className='max-w-60 h-auto mx-auto'/>
-      </footer>
+      </footer> */}
     </div>
   );
 }

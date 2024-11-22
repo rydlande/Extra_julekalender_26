@@ -21,25 +21,25 @@ function Modal({ content, onClose }) {
   };
 
   const toggleFlippingCard = () => {
-    //setShowBackside(!showBackside);
     setShowBackside((prev) => !prev);
   };
 
   return (
     <div 
-      className="fixed inset-0 bg-black backdrop-blur-sm bg-opacity-50 flex items-center justify-center" 
+      className="fixed inset-0 bg-black backdrop-blur-sm bg-opacity-50 flex items-center justify-center text-red-dark" 
       onClick={handleBackdropClick}
     >
       <div
-        className={`relative bg-white rounded-lg shadow-lg overflow-hidden  ${
-          content.aspectRatio === '9:16'
+        className={`relative bg-white rounded-lg shadow-lg overflow-hidden ${
+          content.type === 'text' && (content.format === 'flipping-card' || content.format === 'paragraphs')
+            ? 'w-[520px] h-[720px]'
+            : content.aspectRatio === '9:16'
             ? 'aspect-[9/16] w-[90%] max-w-[360px]'
             : content.aspectRatio === '16:9'
             ? 'aspect-[16/9] w-[90%] max-w-[640px]'
             : 'aspect-[1/1] w-[90%] max-w-[360px]'
         }`}
       >
-        {/* Close Button */}
         <button
           onClick={onClose}
           className="absolute top-2 right-2 text-black font-bold"
@@ -47,7 +47,6 @@ function Modal({ content, onClose }) {
           &times;
         </button>
 
-        {/* Media Content */}
         {content.type === 'image' && (
           <img
             src={content.src}
@@ -55,6 +54,7 @@ function Modal({ content, onClose }) {
             className="w-full h-full object-cover"
           />
         )}
+
         {content.type === 'video' && (
           <video controls className="w-full h-full">
             <source src={content.src} type="video/mp4" />
@@ -62,51 +62,65 @@ function Modal({ content, onClose }) {
           </video>
         )}
 
-        {/* Flipping Card for Text */}
         {content.type === 'text' && content.format === 'flipping-card' && (
           <div
-            className="relative w-full h-full flex items-center justify-center cursor-pointer"
-            style={{
-              perspective: '1000px',
-            }}
+            className="relative w-full h-full flex cursor-pointer"
+            style={{ perspective: '1000px' }}
             onClick={toggleFlippingCard}
           >
-            {/* Front Side */}
             <div
-              className={`absolute w-full h-full flex items-center justify-center text-red-dark p-8 transition-transform duration-500 ease-in-out ${
+              className={`absolute w-full h-full flex flex-col items-center justify-around p-14 transition-transform duration-500 ease-in-out ${
                 showBackside ? 'rotate-y-180' : 'rotate-y-0'
               }`}
-              style={{
-                backfaceVisibility: 'hidden',
-                transformStyle: 'preserve-3d',
-                transform: showBackside ? 'rotateY(180deg)' : 'rotateY(0)',
-              }}
+              style={{ backfaceVisibility: 'hidden', transformStyle: 'preserve-3d' }}
             >
-              <p className="text-3xl text-center">{content.setup}</p>
+              {content.front.map((item, index) => (
+                <p
+                  key={index}
+                  className={item.style}
+                  dangerouslySetInnerHTML={{ __html: item.text }}
+                ></p>
+              ))}
             </div>
-
-            {/* Back Side */}
             <div
-              className={`absolute w-full h-full flex items-center justify-center text-red-dark p-8 transition-transform duration-500 ease-in-out ${
+              className={`absolute w-full h-full flex flex-col items-center justify-around p-14 transition-transform duration-500 ease-in-out ${
                 showBackside ? 'rotate-y-0' : 'rotate-y-180'
               }`}
-              style={{
-                backfaceVisibility: 'hidden',
-                transformStyle: 'preserve-3d',
-                transform: showBackside ? 'rotateY(0)' : 'rotateY(180deg)',
-              }}
+              style={{ backfaceVisibility: 'hidden', transformStyle: 'preserve-3d' }}
             >
-              <p className="text-3xl text-center">{content.backside}</p>
+              {content.back.map((item, index) => (
+                <p
+                  key={index}
+                  className={item.style}
+                  dangerouslySetInnerHTML={{ __html: item.text }}
+                ></p> 
+              ))}
             </div>
           </div>
         )}
 
-        {/* Paragraph Content with Custom Styles */}
         {content.type === 'text' && content.format === 'paragraphs' && (
-          <div className="p-6 text-left space-y-4">
+          <div className="relative w-full h-full flex flex-col items-center justify-around p-14 transition-transform duration-500 ease-in-out">
             {content.paragraphs.map((para, index) => (
-              <p key={index} className={para.style}>
-                {para.text}
+              <p
+                key={index}
+                className={para.style}
+                dangerouslySetInnerHTML={{ __html: para.text }}
+              ></p>
+            ))}
+          </div>
+        )}
+
+        {content.type === 'image-and-text' && (
+          <div className="relative w-full h-full flex flex-col items-center justify-around p-14 transition-transform duration-500 ease-in-out">
+            <img
+              src={content.image.src}
+              alt={content.image.alt}
+              className="w-full max-w-sm mb-4"
+            />
+            {content.text.map((textItem, index) => (
+              <p key={index} className={textItem.style}>
+                {textItem.text}
               </p>
             ))}
           </div>
@@ -114,6 +128,7 @@ function Modal({ content, onClose }) {
       </div>
     </div>
   );
+
 }
 
 export default Modal;
