@@ -1,21 +1,21 @@
 import CalendarGrid from '../components/CalendarGrid';
 import julekalenderSvg from '../assets/julekalender.svg';
-import extra from '../assets/extra_logo.svg';
 
 function Calendar() {
   return (
-    <div className='bg-[url("./assets/snø.svg")] min-h-screen bg-repeat-x'>
-      <header className="pt-12 pb-2 flex items-center justify-center">
+    <div className="relative w-full h-screen">
+      <div className="absolute inset-0 bg-[url('./assets/snø.svg')] bg-contain bg-no-repeat md:bg-auto md:bg-repeat-x md:"></div>
+      <div className="absolute inset-0 bg-[url('./assets/bolge.svg')] bg-contain bg-no-repeat bg-center"></div>
+      
+      <header className="relative z-10">
         <a href="/admin">
-          <img src={julekalenderSvg} alt="Tekst: julekalender" className='max-w-80 h-auto mx-auto'/>
+          <img src={julekalenderSvg} alt="Julekalender-logo" className="mx-auto max-w-sm w-48 pt-6 md:max-w-md md:w-64 md:pt-12 lg:max-w-full lg:w-80" />
         </a>
       </header>
-      <div className='flex flex-col items-center justify-center'>
+      
+      <div className="relative z-10 mx-auto max-w-sm w-72 pt-6 md:max-w-md md:w-[670px] md:pt-12 lg:max-w-full lg:w-[760px]">
         <CalendarGrid />
       </div>
-      {/* <footer className='pt-12 flex items-center justify-center'>
-        <img src={extra} alt="Extra logo" className='max-w-60 h-auto mx-auto'/>
-      </footer> */}
     </div>
   );
 }

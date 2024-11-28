@@ -5,8 +5,9 @@ import Modal from '../components/Modal';
 
 function AdminGrid() {
   const [selectedDay, setSelectedDay] = useState(null);
-  const days = [3, 16, 10, 20, 24, 9, 15, 1, 23, 8, 4, 18, 22, 19, 11, 7, 17, 12, 5, 21, 14, 2, 13, 6];
-
+  //const days = [3, 16, 10, 20, 24, 9, 15, 1, 23, 8, 4, 18, 22, 19, 11, 7, 17, 12, 5, 21, 14, 2, 13, 6];
+  const days = [3, 16, 10, 20, 24, 9, 15, 1, 23, 8, 4, 18, 22, 19, 11, 7, 17, 12, 26, 27, 28, 29, 30, 31];
+  
   const closeModal = () => {
     setSelectedDay(null);
   };
