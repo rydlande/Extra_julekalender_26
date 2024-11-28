@@ -1,12 +1,12 @@
-import { useState } from 'react';
-//import { isDoorOpen } from '../utils/dataHelpers';
+import { useState, useEffect } from 'react';
 import { dailyContent } from '../data/displayContent';
 import Modal from '../components/Modal';
+import Modal2 from '../components/Modal2';
 
 
 function CalendarGrid() {
   const [selectedDay, setSelectedDay] = useState(null);
-  const days = [3, 16, 10, 20, 24, 9, 15, 1, 23, 8, 4, 18, 22, 19, 11, 7, 17, 12, 26, 27, 28, 29, 30, 31];
+  const days = [3, 16, 10, 20, 24, 9, 15, 1, 23, 8, 4, 18, 22, 19, 11, 7, 17, 12, 5, 21, 14, 2, 13, 6];
 
   const today = new Date();
   const currentDay = today.getDate();
@@ -19,6 +19,17 @@ function CalendarGrid() {
   const closeModal = () => {
     setSelectedDay(null);
   };
+
+  useEffect(() => {
+    const handleEsc = (e) => {
+      if (e.key === 'Escape') {
+        closeModal();
+      }
+    };
+
+    window.addEventListener('keydown', handleEsc);
+    return () => window.removeEventListener('keydown', handleEsc);
+  }, []);
 
   return (
     <div className="grid grid-cols-4 md:grid-cols-6 gap-5 md:gap-5 md:gap-x-11 lg:gap-8">
@@ -39,7 +50,7 @@ function CalendarGrid() {
       ))}
 
       {selectedDay && (
-        <Modal content={dailyContent[selectedDay]} onClose={closeModal} />
+        <Modal2 content={dailyContent[selectedDay]} onClose={closeModal} />
       )}
     </div>
   );
