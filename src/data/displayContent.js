@@ -195,4 +195,46 @@ export const dailyContent = {
         src: '', 
         description: '' 
     },
+    26: {
+        type: 'text',
+        format: 'paragraphs',
+        paragraphs: [
+            { text: '', style: '' },
+        ]
+    },
+    27: {
+        type: 'text',
+        format: 'paragraphs',
+        paragraphs: [
+            { text: '', style: '' },
+        ]
+    },
+    28: {
+        type: 'text',
+        format: 'paragraphs',
+        paragraphs: [
+            { text: '', style: '' },
+        ]
+    },
+    29: {
+        type: 'text',
+        format: 'paragraphs',
+        paragraphs: [
+            { text: '', style: '' },
+        ]
+    },
+    30: {
+        type: 'text',
+        format: 'paragraphs',
+        paragraphs: [
+            { text: '', style: '' },
+        ]
+    },
+    31: {
+        type: 'text',
+        format: 'paragraphs',
+        paragraphs: [
+            { text: '', style: '' },
+        ]
+    },
 };

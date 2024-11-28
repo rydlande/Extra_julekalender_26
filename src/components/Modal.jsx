@@ -32,7 +32,7 @@ function Modal({ content, onClose }) {
       <div
         className={`relative bg-white rounded-lg shadow-lg overflow-hidden ${
           content.type === 'text' && (content.format === 'flipping-card' || content.format === 'paragraphs')
-            ? 'w-[520px] h-[720px]'
+            ? 'w-[320px] h-[570px]'
             : content.aspectRatio === '9:16'
             ? 'aspect-[9/16] w-[90%] max-w-[360px]'
             : content.aspectRatio === '16:9'
