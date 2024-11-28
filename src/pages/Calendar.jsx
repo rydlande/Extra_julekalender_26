@@ -1,7 +1,13 @@
 import CalendarGrid from '../components/CalendarGrid';
 import julekalenderSvg from '../assets/julekalender.svg';
+import { dailyContent } from '../data/displayContent';
+import { useParams } from 'react-router-dom';
+
 
 function Calendar() {
+  const { dayId } = useParams();
+  const content = dailyContent[dayId]
+
   return (
     <div className="relative w-full h-screen">
       <div className="absolute inset-0 bg-[url('./assets/snø.svg')] bg-contain bg-no-repeat md:bg-auto md:bg-repeat-x md:"></div>
