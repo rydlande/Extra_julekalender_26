@@ -1,6 +1,7 @@
 import AdminGrid from '../components/AdminGrid';
 import julekalenderSvg from '../assets/julekalender.svg';
-import extra from '../assets/extra_logo.svg';
+//import extra from '../assets/extra_logo.svg';
+
 function Admin() {
   return (
     <div className="relative w-full h-screen">
