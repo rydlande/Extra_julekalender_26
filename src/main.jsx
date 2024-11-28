@@ -3,7 +3,6 @@ import * as ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App.jsx';
 import Calendar from './pages/Calendar';
-import Admin from './pages/Admin';
 import './index.css';
 
 const router = createBrowserRouter([
@@ -18,10 +17,6 @@ const router = createBrowserRouter([
       {
         path: ':dayId', 
         element: <Calendar />,
-      },
-      {
-        path: 'admin',
-        element: <Admin />,
       },
     ],
   },
