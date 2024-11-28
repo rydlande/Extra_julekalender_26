@@ -2,12 +2,13 @@
 text-2xl / text-4xl / emoji: text-6xl/-9xl
 text-center
 */
+import luke1 from '../assets/luke1.mp4'
 
 export const dailyContent = {
     1: { 
         type: 'video', 
-        aspectRatio: '16:9',
-        src: 'https://www.shutterstock.com/shutterstock/videos/1111772347/preview/stock-footage-cozy-room-interior-with-christmas-tree-and-candles-and-fireplace-christmas-decoration-seamless.webm', 
+        aspectRatio: '9:16',
+        src: luke1,
         description: 'A cozy Christmas video.' 
     },
     2: {
