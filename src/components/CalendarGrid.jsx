@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { dailyContent } from '../data/displayContent';
-import Modal from '../components/Modal';
-import Modal2 from '../components/Modal2';
+import Modal from './Modal';
 
 
 function CalendarGrid() {
@@ -52,7 +51,7 @@ function CalendarGrid() {
       ))}
 
       {selectedDay && (
-        <Modal2 content={dailyContent[selectedDay]} onClose={closeModal} luke={selectedDay} />
+        <Modal content={dailyContent[selectedDay]} onClose={closeModal} luke={selectedDay} />
       )}
     </div>
   );

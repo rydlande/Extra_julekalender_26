@@ -1,7 +1,3 @@
-/* 
-text-2xl / text-4xl / emoji: text-6xl/-9xl
-
-*/
 import luke1 from '../assets/luke1.mp4'
 
 export const dailyContent = {
@@ -11,9 +7,12 @@ export const dailyContent = {
         description: 'Introduksjon til Extras julekalender',
     },
     2: {
-        type: 'image', 
-        src: 'https://plus.unsplash.com/premium_photo-1664374288390-8a02d5614a8f?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGNocmlzdG1hc3xlbnwwfHwwfHx8MA%3D%3D', 
-        description: 'Day 1 image',
+        type: 'text',
+        format: 'paragraphs',
+        paragraphs: [
+            { text: 'Ny podcast-episode', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
+            { text: '<a href="https://podcasts.helloaudio.fm/player?episodeId=657ddfde-06ba-4c04-9790-d2696690973e&code=OPs83Jlidq&centered=true" target="_blank"><span class="underline hover:text-red"">Fruktkurven: jula i F&G</span>!</br> Hør nå🍊🧡</a>', style: 'text-2xl md:text-3xl lg:text-5xl mt-4 md:mt-6 lg:mt-8 mb-2 md:mb-4 lg:mb-6' },
+        ],
     },
     3: {
         type: 'text',
@@ -28,10 +27,10 @@ export const dailyContent = {
         ],
         back: [
             { text: 'Tre nøtter: Hvilke julesanger er dette? Knekk nøttene for å se!', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
-            { text: '1: 🌰🔥', style: 'text-5xl lg:text-7xl mt-8 md:mt-10 lg:mt-12'},
+            { text: '1: 🌰🔥', style: 'text-5xl lg:text-7xl mt-8 lg:mt-12'},
             { text: '2: 🐦‍⬛🍐🌳', style: 'text-5xl lg:text-7xl mt-4'},
             { text: '3: 🫴🌽🍿', style: 'text-5xl lg:text-7xl mt-4'},
-            { text: 'Kommenter løsningen i kommentarfeltet til dagens luke på Viva ⭐️', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-12 lg:mt-24 mb-2 md:mb-4 lg:mb-6' },
+            { text: 'Kommenter løsningen i kommentarfeltet til dagens luke på Viva ⭐️', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-8 lg:mt-[89px] mb-2 md:mb-4 lg:mb-6' },
         ],
     },
     4: {
@@ -94,7 +93,6 @@ export const dailyContent = {
     },
     12: {
         type: 'video', 
-        aspectRatio: '16:9',
         src: '', 
         description: '' 
     },
@@ -110,16 +108,18 @@ export const dailyContent = {
     14: {
         type: 'text',
         format: 'flipping-card',
-        heightClass: 'h-80 md:h-[340px] lg:h-[580px]',
+        heightClass: 'h-[355px] md:h-[420px] lg:h-[600px]',
         front: [
-            { text: 'En nøtt å knekke! <br>Hint: julekalender', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
-            { text: '🌰', style: 'text-8xl' },
-            { text: 'Kommenter løsningen i kommentarfeltet til dagens luke på Viva ⭐️', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-12 lg:mt-24 mb-2 md:mb-4 lg:mb-6' },
+            { text: 'En nøtt å knekke!', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
+            { text: 'Hint: julekalender', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-0' },
+            { text: '🌰', style: 'text-8xl lg:text-9xl mt-12 md:mt-10 lg:mt-24' },
+            { text: 'Kommenter løsningen i kommentarfeltet til dagens luke på Viva ⭐️', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-12 lg:mt-24' },
         ],
         back: [
-            { text: 'En nøtt å knekke! <br>Hint: julekalender', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
-            { text: '🛞👞🪡🛣️', style: 'text-5xl lg:text-7xl'},
-            { text: 'Kommenter løsningen i kommentarfeltet til dagens luke på Viva ⭐️', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-12 lg:mt-24 mb-2 md:mb-4 lg:mb-6' },
+            { text: 'En nøtt å knekke!', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
+            { text: 'Hint: julekalender', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-0' },
+            { text: '🛞👞🪡🛣️', style: 'text-5xl lg:text-7xl mt-12 md:mt-16 lg:mt-28' },
+            { text: 'Kommenter løsningen i kommentarfeltet til dagens luke på Viva ⭐️', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-20 md:mt-20 lg:mt-[134px]' },
         ]
     },
     15: {
@@ -157,7 +157,6 @@ export const dailyContent = {
     },
     19: {
         type: 'video', 
-        aspectRatio: '16:9',
         src: '', 
         description: '' 
     },
@@ -173,7 +172,7 @@ export const dailyContent = {
     21: {
         type: 'text',
         format: 'flipping-card',
-        heightClass: 'h-80 md:h-[340px] lg:h-[580px]',
+        heightClass: 'h-52 md:h-60 lg:h-96',
         front: [
             { text: 'En nøtt å knekke!', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
             { text: 'Hvorfor nyser ekornet så mye i desember?', style: 'text-2xl md:text-3xl lg:text-5xl mt-4 md:mt-6 lg:mt-8' },
@@ -185,18 +184,26 @@ export const dailyContent = {
     },
     22: {
         type: 'video', 
-        aspectRatio: '16:9',
         src: '', 
         description: '' 
     },
     23: {
-        type: 'image', 
-        src: '', 
-        description: '' 
+        type: 'text',
+        format: 'paragraphs',
+        paragraphs: [
+            { 
+                text: 'Hvor mange av navnene fra denne gamle klassiskeren husker du? 🥂', 
+                style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24',
+            },
+            { 
+                image: 'https://images.unsplash.com/photo-1480930700499-dc44aa7cb2cf?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 
+                alt: 'Christmas Wreath', 
+                style: 'mt-4 md:mt-6 lg:mt-8 w-full h-auto',
+            },
+        ],
     },
     24: {
         type: 'video', 
-        aspectRatio: '16:9',
         src: '', 
         description: '' 
     }
