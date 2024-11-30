@@ -28,8 +28,8 @@ export const dailyContent = {
         back: [
             { text: 'Tre nøtter: Hvilke julesanger er dette? Knekk nøttene for å se!', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
             { text: '1: 🌰🔥', style: 'text-5xl lg:text-7xl mt-8 lg:mt-12'},
-            { text: '2: 🐦‍⬛🍐🌳', style: 'text-5xl lg:text-7xl mt-4'},
-            { text: '3: 🫴🌽🍿', style: 'text-5xl lg:text-7xl mt-4'},
+            { text: '2: 🐤🍐🌳', style: 'text-5xl lg:text-7xl mt-4'},
+            { text: '3: 🫴🏻🌽🍿', style: 'text-5xl lg:text-7xl mt-4'},
             { text: 'Kommenter løsningen i kommentarfeltet til dagens luke på Viva ⭐️', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-8 lg:mt-[89px] mb-2 md:mb-4 lg:mb-6' },
         ],
     },
@@ -38,7 +38,7 @@ export const dailyContent = {
         format: 'paragraphs',
         paragraphs: [
             { text: 'Vi trenger mer inspirasjon!', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
-            { text: 'Legg ut et bilde fra butikken for å være med i trekningen av fin premie 🎁 ', style: 'text-2xl md:text-3xl lg:text-5xl mt-4 md:mt-6 lg:mt-8' },
+            { text: 'Legg ut et bilde fra butikken for å være med i trekningen av fin premie 🎁', style: 'text-2xl md:text-3xl lg:text-5xl mt-4 md:mt-6 lg:mt-8' },
             { text: 'Merk med #extrajul', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-12 lg:mt-24 mb-2 md:mb-4 lg:mb-6' },
         ],
     },
@@ -73,7 +73,7 @@ export const dailyContent = {
         type: 'text',
         format: 'paragraphs',
         paragraphs: [
-            { text: 'Du er dagens gode fe!🪄 <br>Gjør noe fint for en kollega i dag 🥰', style: 'text-2xl md:text-3xl lg:text-5xl mt-11 md:mt-14 lg:mt-24' },
+            { text: 'Du er dagens gode fe!✨ <br>Gjør noe fint for en kollega i dag 🥰', style: 'text-2xl md:text-3xl lg:text-5xl mt-11 md:mt-14 lg:mt-24' },
             { text: 'Legg ut en skrytepost om de fine folka i butikken på Viva, gi en god klem eller syng en sang. Vær kreativ for å gjøre 9. desember Extra bra for de beste folka ❤️', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-12 lg:mt-24 mb-2 md:mb-4 lg:mb-6' }
         ]
     },
@@ -152,7 +152,7 @@ export const dailyContent = {
         format: 'paragraphs',
         paragraphs: [
             { text: 'Hokus, pokus, filiokus, la oss fylle Viva med mersalgsfokus!', style: 'text-2xl md:text-3xl lg:text-5xl mt-11 md:mt-14 lg:mt-24' },
-            { text: 'Del bilder av fine eksponeringer og merk med #extrajul for å vinne preeemie 🪄', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-12 lg:mt-24 mb-2 md:mb-4 lg:mb-6' },
+            { text: 'Del bilder av fine eksponeringer og merk med #extrajul for å vinne preeemie 🎁', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-12 lg:mt-24 mb-2 md:mb-4 lg:mb-6' },
         ]
     },
     19: {
@@ -174,7 +174,7 @@ export const dailyContent = {
         format: 'flipping-card',
         heightClass: 'h-52 md:h-60 lg:h-96',
         front: [
-            { text: 'En nøtt å knekke!', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
+            { text: 'En nøtt å knekke! 🌰', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
             { text: 'Hvorfor nyser ekornet så mye i desember?', style: 'text-2xl md:text-3xl lg:text-5xl mt-4 md:mt-6 lg:mt-8' },
         ],
         back: [

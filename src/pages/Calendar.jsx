@@ -12,9 +12,9 @@ function Calendar() {
   const content = dailyContent[dayId]
 
   return (
-    <div className="relative w-full h-screen">
-      <div className="absolute inset-0 bg-[url('./assets/snø.svg')] bg-contain bg-no-repeat md:bg-auto md:bg-repeat-x md:"></div>
-      <div className="absolute inset-0 w-screen">
+    <div className="relative w-full h-screen overflow-hidden">
+      <div className="absolute inset-0 bg-[url('./assets/snø.svg')] bg-contain bg-no-repeat md:bg-auto md:bg-repeat-x"></div>
+      <div className="absolute inset-0 w-screen h-screen overflow-hidden">
         <img src={bolge} alt="" className="w-full object-cover absolute top-[20%] md:top-[25%] translate-y-[-30%]" />
       </div>
 
