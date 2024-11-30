@@ -6,17 +6,8 @@ import FlippingCardContent from './FlippingCardContent';
 import ParagraphsContent from './ParagraphsContent';
 import ImageAndTextContent from './ImageAndTextContent';
 
-function Modal2({ content, onClose }) {
+function Modal2({ content, onClose, luke }) {
     if (!content) return null;
-
-    const { width = '320px', height = '500px', backgroundColor = 'bg-white' } = content.styles || {};
-
-    const aspectRatioClass =
-        content.aspectRatio === '9:16'
-        ? 'aspect-[9/16]'
-        : content.aspectRatio === '16:9'
-        ? 'aspect-[16/9]'
-        : 'aspect-[1/1]';
 
     const [isFlipped, setIsFlipped] = useState(false);
 
@@ -32,42 +23,41 @@ function Modal2({ content, onClose }) {
         >
             <div
                 onClick={(e) => e.stopPropagation()}
-                className={`relative rounded-lg shadow-lg overflow-hidden text-center ${backgroundColor}`}
-                style={{
-                    width,
-                    height,
-                }}
+                className={`relative rounded-lg shadow-lg text-center`}
             >
+                <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-red text-white rounded-full w-12 md:w-14 lg:w-16 h-12 md:h-14 lg:h-16 flex items-center justify-center font-ExtraRound-Medium text-3xl md:text-4xl lg:text-5xl z-20"
+                >
+                    <span className="-mb-1 md:-mb-1.5 lg:-mb-2">{luke}</span>
+                </div> 
                 <button
                     onClick={onClose}
-                className="absolute top-2 right-2 text-black font-bold text-2xl z-10"
+                    className="absolute top-2 right-1 md:right-1.5 lg:right-2 font-bold text-3xl md:text-4xl lg:text-5xl z-10 text-red-dark text-center w-8 h-8"
                 >
                 &times;
                 </button>
 
-                {content.type === 'video' && (
-                    <div className={`relative w-full ${aspectRatioClass}`}>
-                        <video controls className="absolute inset-0 w-full h-full object-cover">
-                            <source src={content.src} type="video/mp4" />
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
+                {content.type === 'video' && <VideoContent src={content.src} />}
+                {content.type === 'image' && <ImageContent src={content.src} description={content.description} />}
+                {content.type === 'text' && content.format === 'paragraphs' && (
+                    <ParagraphsContent paragraphs={content.paragraphs} />
                 )}
 
-                {content.type === 'image' && (
-                    <div className={`relative w-full ${aspectRatioClass}`}>
-                        <img 
-                            src={content.src} 
-                            alt={content.description} 
-                            className="w-full h-full object-cover" 
-                        />
-                    </div>
-                )}
-
+                {/* <div className='mx-6 md:mx-8 lg:mx-16 py-4 bg-white rounded-lg lg:rounded-[0.9rem]'>
+                    {content.type === 'text' && content.format === 'flipping-card' && (
+                        <FlippingCardContent front={content.front} back={content.back} />
+                    )}
+                </div> */}
                 {content.type === 'text' && content.format === 'flipping-card' && (
+                <div className={`group px-6 md:px-8 lg:px-16 py-4 w-80 md:w-[340px] lg:w-[580px] bg-white rounded-lg lg:rounded-[0.9rem] [perspective:1000px] ${
+                    content.heightClass
+                  }`}>
+                    <FlippingCardContent front={content.front} back={content.back} />
+                </div>
+                )}
+                {/* {content.type === 'text' && content.format === 'flipping-card' && (
                     <div
                         className="relative w-full h-full"
-                        style={{ perspective: '1000px' }} // Enable 3D perspective
+                        style={{ perspective: '1000px' }}
                     >
                         <div
                         className={`absolute w-full h-full transition-transform duration-500 ${
@@ -76,9 +66,8 @@ function Modal2({ content, onClose }) {
                         style={{
                             transformStyle: 'preserve-3d',
                         }}
-                        onClick={toggleFlip} // Toggle flip on click
+                        onClick={toggleFlip} 
                         >
-                        {/* Front Side */}
                         <div
                             className="absolute w-full h-full flex flex-col items-center justify-center bg-white"
                             style={{
@@ -92,7 +81,6 @@ function Modal2({ content, onClose }) {
                             ))}
                         </div>
 
-                        {/* Back Side */}
                         <div
                             className="absolute w-full h-full flex flex-col items-center justify-center bg-gray-100 rotate-y-180"
                             style={{
@@ -107,19 +95,7 @@ function Modal2({ content, onClose }) {
                         </div>
                         </div>
                     </div>
-                )}
-
-                {content.type === 'text' && content.format === 'paragraphs' && (
-                    <div className="p-4">
-                        {content.paragraphs.map((para, index) => (
-                        <p
-                            key={index}
-                            className={para.style}
-                            dangerouslySetInnerHTML={{ __html: para.text }}
-                        ></p>
-                        ))}
-                    </div>
-                )}
+                )} */}
 
             </div>
         </div>
