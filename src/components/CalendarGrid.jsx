@@ -44,7 +44,8 @@ function CalendarGrid() {
               : 'bg-red text-white pointer-events-none ring-[4px] lg:ring-[6px] ring-offset-[0.5px] ring-offset-red-dark ring-red box-border'
           }`}
         >
-            <span className="-mb-1.5 md:-mb-2 lg:-mb-2.5">{day}</span>
+            {/* <span className="-mb-1.5 md:-mb-2 lg:-mb-2.5">{day}</span> */}
+            {day}
         </div>
       ))}
 

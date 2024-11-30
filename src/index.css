@@ -2,30 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
+html, 
+body, 
+#root {
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  font-family: 'ExtraRound-Regular', 'Noto Color Emoji', sans-serif;
+}
+
+.emoji {
+  font-family: 'Noto Color Emoji', 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;
+}
+
 @font-face {
   font-family: 'ExtraRound-Regular';
-  src: url('../public/fonts/ExtraRound-Regular.ttf');
+  src: url('/fonts/ExtraRound-Regular.woff2') format('woff2'),
+       url('/fonts/ExtraRound-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'ExtraRound-Light';
-  src: url('/fonts/ExtraRound-Light.ttf');
+  src: url('/fonts/ExtraRound-Light.woff2') format('woff2'),
+       url('/fonts/ExtraRound-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'ExtraRound-Medium';
-  src: url('/fonts/ExtraRound-Medium.ttf');
+  src: url('/fonts/ExtraRound-Medium.woff2') format('woff2'),
+       url('/fonts/ExtraRound-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'ExtraRound-Bold';
-  src: url('/fonts/ExtraRound-Bold.ttf');
+  src: url('/fonts/ExtraRound-Bold.woff2') format('woff2'),
+       url('/fonts/ExtraRound-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
 }
-
-@font-face {
-  font-family: 'Romy';
-  src: url('/fonts/Romy.ttf');
-} 
 
 .backface-hidden {
   backface-visibility: hidden;
@@ -37,6 +66,14 @@
 
 .rotate-y-180 {
   transform: rotateY(180deg);
+}
+
+[backface-visibility-hidden] {
+  backface-visibility: hidden;
+}
+
+[transform-style-preserve-3d] {
+  transform-style: preserve-3d;
 }
 
 @keyframes fly-reverse {

@@ -8,9 +8,12 @@ const FlippingCardContent = ({ front, back }) => {
   };
 
   return (
-    <div className="relative h-full w-full" style={{ perspective: '1000px' }}>
+    <div 
+      className="relative h-full w-full" 
+      style={{ perspective: '1000px' }}
+    >
       <div
-        className={`absolute inset-0 h-full w-full transition-transform duration-700 ${
+        className={`absolute h-full w-full transition-transform duration-500 ${
           isFlipped ? 'rotate-y-180' : ''
         }`}
         style={{
@@ -19,9 +22,10 @@ const FlippingCardContent = ({ front, back }) => {
         onClick={toggleFlip}
       >
         {/* Front Side */}
-          <div className="absolute inset-0 h-full w-full flex flex-col items-center bg-transparent cursor-pointer"
+          <div className="absolute h-full w-full flex flex-col items-center justify-center cursor-pointer"
             style={{
               backfaceVisibility: 'hidden',
+              transform: 'rotateY(0deg)',
             }}
           >
             {front.map((item, index) => (
@@ -33,10 +37,10 @@ const FlippingCardContent = ({ front, back }) => {
 
         {/* Back Side */}
         <div
-          className="absolute inset-0 h-full w-full flex flex-col items-center  rounded-xl cursor-pointer"
+          className="absolute inset-0 h-full w-full flex flex-col items-center justify-center cursor-pointer"
           style={{
-            transform: 'rotateY(180deg)',
             backfaceVisibility: 'hidden',
+            transform: 'rotateY(180deg)',
           }}
         >
             {back.map((item, index) => (

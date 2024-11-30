@@ -25,7 +25,6 @@ module.exports = {
         'ExtraRound-Bold': ['ExtraRound-Bold', 'sans-serif'],
         'ExtraRound-Light': ['ExtraRound-Light', 'sans-serif'],
         'ExtraRound-Medium': ['ExtraRound-Medium', 'sans-serif'],
-        'Romy': ['Romy', 'sans-serif'],
       },
       keyframes: {
         fly: {
