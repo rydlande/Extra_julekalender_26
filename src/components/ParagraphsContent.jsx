@@ -1,5 +1,5 @@
 const ParagraphsContent = ({ paragraphs }) => (
-    <div className="relative w-full h-full flex flex-col items-center justify-between p-14 transition-transform duration-500 ease-in-out">
+    <div className="px-6 md:px-8 lg:px-16 py-4 bg-white h-auto w-80 md:w-[340px] lg:w-[580px] rounded-lg lg:rounded-[0.9rem]">
       {paragraphs.map((para, index) => (
         <p
           key={index}

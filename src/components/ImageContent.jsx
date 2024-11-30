@@ -1,9 +1,11 @@
 const ImageContent = ({ src, description }) => (
-    <img
-      src={src}
-      alt={description}
-      className="w-full h-full object-cover"
-    />
+    <div className="relative w-full h-[500px] md:h-[750px] aspect-[9/16] bg-transparent">
+      <img
+        src={src}
+        alt={description}
+        className="absolute inset-0 w-full h-full object-cover rounded-md lg:rounded-lg"
+      />
+    </div>
   );
   
   export default ImageContent;

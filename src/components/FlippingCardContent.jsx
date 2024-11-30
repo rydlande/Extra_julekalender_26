@@ -1,48 +1,54 @@
 import { useState } from 'react';
 
 const FlippingCardContent = ({ front, back }) => {
-  const [showBackside, setShowBackside] = useState(false);
+  const [isFlipped, setIsFlipped] = useState(false);
 
-  const toggleFlippingCard = () => {
-    setShowBackside((prev) => !prev);
+  const toggleFlip = () => {
+    setIsFlipped((prev) => !prev);
   };
 
   return (
-    <div
-      className="relative w-full h-full flex cursor-pointer"
-      style={{ perspective: '1000px' }}
-      onClick={toggleFlippingCard}
-    >
+    <div className="relative h-full w-full" style={{ perspective: '1000px' }}>
       <div
-        className={`absolute w-full h-full flex flex-col items-center justify-around p-14 transition-transform duration-500 ease-in-out ${
-          showBackside ? 'rotate-y-180' : 'rotate-y-0'
+        className={`absolute inset-0 h-full w-full transition-transform duration-700 ${
+          isFlipped ? 'rotate-y-180' : ''
         }`}
-        style={{ backfaceVisibility: 'hidden', transformStyle: 'preserve-3d' }}
+        style={{
+          transformStyle: 'preserve-3d',
+        }}
+        onClick={toggleFlip}
       >
-        {front.map((item, index) => (
-          <p
-            key={index}
-            className={item.style}
-            dangerouslySetInnerHTML={{ __html: item.text }}
-          ></p>
-        ))}
-      </div>
-      <div
-        className={`absolute w-full h-full flex flex-col items-center justify-around p-14 transition-transform duration-500 ease-in-out ${
-          showBackside ? 'rotate-y-0' : 'rotate-y-180'
-        }`}
-        style={{ backfaceVisibility: 'hidden', transformStyle: 'preserve-3d' }}
-      >
-        {back.map((item, index) => (
-          <p
-            key={index}
-            className={item.style}
-            dangerouslySetInnerHTML={{ __html: item.text }}
-          ></p>
-        ))}
+        {/* Front Side */}
+          <div className="absolute inset-0 h-full w-full flex flex-col items-center bg-transparent cursor-pointer"
+            style={{
+              backfaceVisibility: 'hidden',
+            }}
+          >
+            {front.map((item, index) => (
+              <p key={index} className={item.style}>
+                {item.text}
+              </p>
+            ))}
+        </div>
+
+        {/* Back Side */}
+        <div
+          className="absolute inset-0 h-full w-full flex flex-col items-center  rounded-xl cursor-pointer"
+          style={{
+            transform: 'rotateY(180deg)',
+            backfaceVisibility: 'hidden',
+          }}
+        >
+            {back.map((item, index) => (
+              <p key={index} className={item.style}>
+                {item.text}
+              </p>
+            ))}
+        </div>
       </div>
     </div>
   );
 };
+
 
 export default FlippingCardContent;

@@ -31,6 +31,8 @@ function CalendarGrid() {
     return () => window.removeEventListener('keydown', handleEsc);
   }, []);
 
+  //console.log(days)
+
   return (
     <div className="grid grid-cols-4 md:grid-cols-6 gap-5 md:gap-5 md:gap-x-11 lg:gap-8">
       {days.map((day) => (
@@ -50,7 +52,7 @@ function CalendarGrid() {
       ))}
 
       {selectedDay && (
-        <Modal2 content={dailyContent[selectedDay]} onClose={closeModal} />
+        <Modal2 content={dailyContent[selectedDay]} onClose={closeModal} luke={selectedDay} />
       )}
     </div>
   );
