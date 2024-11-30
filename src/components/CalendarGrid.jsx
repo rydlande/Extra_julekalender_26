@@ -12,7 +12,7 @@ function CalendarGrid() {
   const currentMonth = today.getMonth();
 
   function isDoorOpen(day) {
-    return day <= new Date().getDate(); 
+    return currentMonth === 11 && day <= today.getDate();
   }
 
   const closeModal = () => {
@@ -30,8 +30,6 @@ function CalendarGrid() {
     return () => window.removeEventListener('keydown', handleEsc);
   }, []);
 
-  //console.log(days)
-
   return (
     <div className="grid grid-cols-4 md:grid-cols-6 gap-5 md:gap-5 md:gap-x-11 lg:gap-8">
       {days.map((day) => (
@@ -39,7 +37,7 @@ function CalendarGrid() {
           key={day}
           onClick={() => isDoorOpen(day) && setSelectedDay(day)}
           className={`cursor-pointer flex items-center justify-center text-center font-ExtraRound-Medium shadow-md md:shadow-xl w-14 h-14 md:w-16 md:h-16 lg:w-24 lg:h-24 rounded-[1px] lg:rounded-sm text-[37px] md:text-[45px] lg:text-[70px] ${
-            day === currentDay && currentMonth === 10
+            day === currentDay && currentMonth === 11
               ? 'bg-red text-yellow ring-[3px] ring-offset-2 lg:ring-offset-4 ring-offset-red ring-yellow'
               : isDoorOpen(day)
               ? 'bg-red-dark text-[#ae1322] ring-4 lg:ring-8 ring-offset-1 ring-offset-red-dark ring-red-dark'
