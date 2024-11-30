@@ -1,134 +1,50 @@
-import { useEffect, useState } from 'react';
 
-function Modal({ content, onClose }) {
-  const [showBackside, setShowBackside] = useState(false);
-  if (!content) return null;
+import VideoContent from './VideoContent';
+import ImageContent from './ImageContent';
+import FlippingCardContent from './FlippingCardContent';
+import ParagraphsContent from './ParagraphsContent';
+import ImageAndTextContent from './ImageAndTextContent';
 
-  useEffect(() => {
-    const handleEsc = (e) => {
-      if (e.key === 'Escape') {
-        onClose();
-      }
-    };
-    window.addEventListener('keydown', handleEsc);
-    return () => window.removeEventListener('keydown', handleEsc);
-  }, [onClose]);
+function Modal({ content, onClose, luke }) {
+    if (!content) return null;
 
-  const handleBackdropClick = (e) => {
-    if (e.target === e.currentTarget) {
-      onClose();
-    }
-  };
-
-  const toggleFlippingCard = () => {
-    setShowBackside((prev) => !prev);
-  };
-
-  return (
-    <div 
-      className="fixed inset-0 bg-black backdrop-blur-sm bg-opacity-50 flex items-center justify-center text-red-dark" 
-      onClick={handleBackdropClick}
-    >
-      <div
-        className={`relative bg-white rounded-lg shadow-lg overflow-hidden ${
-          content.type === 'text' && (content.format === 'flipping-card' || content.format === 'paragraphs')
-            ? 'w-[320px] h-[570px]'
-            : content.aspectRatio === '9:16'
-            ? 'aspect-[9/16] w-[90%] max-w-[360px]'
-            : content.aspectRatio === '16:9'
-            ? 'aspect-[16/9] w-[90%] max-w-[640px]'
-            : 'aspect-[1/1] w-[90%] max-w-[360px]'
-        }`}
-      >
-        <button
-          onClick={onClose}
-          className="absolute top-2 right-2 text-black font-bold"
+    return (
+    <div className="static">
+        <div
+            className="fixed h-screen w-screen bg-black z-10 top-0 left-0 backdrop-blur-sm bg-opacity-50 flex items-center justify-center text-red-dark"
+            onClick={onClose}
         >
-          &times;
-        </button>
-
-        {content.type === 'image' && (
-          <img
-            src={content.src}
-            alt={content.description}
-            className="w-full h-full object-cover"
-          />
-        )}
-
-        {content.type === 'video' && (
-          <video controls className="w-full h-full">
-            <source src={content.src} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        )}
-
-        {content.type === 'text' && content.format === 'flipping-card' && (
-          <div
-            className="relative w-full h-full flex cursor-pointer"
-            style={{ perspective: '1000px' }}
-            onClick={toggleFlippingCard}
-          >
             <div
-              className={`absolute w-full h-full flex flex-col items-center justify-around p-14 transition-transform duration-500 ease-in-out ${
-                showBackside ? 'rotate-y-180' : 'rotate-y-0'
-              }`}
-              style={{ backfaceVisibility: 'hidden', transformStyle: 'preserve-3d' }}
+                onClick={(e) => e.stopPropagation()}
+                className={`relative rounded-lg shadow-lg text-center`}
             >
-              {content.front.map((item, index) => (
-                <p
-                  key={index}
-                  className={item.style}
-                  dangerouslySetInnerHTML={{ __html: item.text }}
-                ></p>
-              ))}
-            </div>
-            <div
-              className={`absolute w-full h-full flex flex-col items-center justify-around p-14 transition-transform duration-500 ease-in-out ${
-                showBackside ? 'rotate-y-0' : 'rotate-y-180'
-              }`}
-              style={{ backfaceVisibility: 'hidden', transformStyle: 'preserve-3d' }}
-            >
-              {content.back.map((item, index) => (
-                <p
-                  key={index}
-                  className={item.style}
-                  dangerouslySetInnerHTML={{ __html: item.text }}
-                ></p> 
-              ))}
-            </div>
-          </div>
-        )}
+                <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-red text-white rounded-full w-12 md:w-14 lg:w-16 h-12 md:h-14 lg:h-16 flex items-center justify-center font-ExtraRound-Medium text-3xl md:text-4xl lg:text-5xl z-20"
+                >
+                    <span className="-mb-1 md:-mb-1.5 lg:-mb-2">{luke}</span>
+                </div> 
+                <button
+                    onClick={onClose}
+                    className="absolute top-2 right-1 md:right-1.5 lg:right-2 font-bold text-3xl md:text-4xl lg:text-5xl z-10 text-red-dark text-center w-8 h-8"
+                >
+                &times;
+                </button>
 
-        {content.type === 'text' && content.format === 'paragraphs' && (
-          <div className="relative w-full h-full flex flex-col items-center justify-around p-14 transition-transform duration-500 ease-in-out">
-            {content.paragraphs.map((para, index) => (
-              <p
-                key={index}
-                className={para.style}
-                dangerouslySetInnerHTML={{ __html: para.text }}
-              ></p>
-            ))}
-          </div>
-        )}
-
-        {content.type === 'image-and-text' && (
-          <div className="relative w-full h-full flex flex-col items-center justify-around p-14 transition-transform duration-500 ease-in-out">
-            <img
-              src={content.image.src}
-              alt={content.image.alt}
-              className="w-full max-w-sm mb-4"
-            />
-            {content.text.map((textItem, index) => (
-              <p key={index} className={textItem.style}>
-                {textItem.text}
-              </p>
-            ))}
-          </div>
-        )}
-      </div>
+                {content.type === 'video' && <VideoContent src={content.src} />}
+                {content.type === 'image' && <ImageContent src={content.src} description={content.description} />}
+                {content.type === 'text' && content.format === 'paragraphs' && (
+                    <ParagraphsContent paragraphs={content.paragraphs} />
+                )}
+                {content.type === 'text' && content.format === 'flipping-card' && (
+                <div className={`group px-6 md:px-8 lg:px-16 py-4 w-80 md:w-[340px] lg:w-[580px] bg-white rounded-lg lg:rounded-[0.9rem] [perspective:1000px] ${
+                    content.heightClass
+                  }`}>
+                    <FlippingCardContent front={content.front} back={content.back} />
+                </div>
+                )}
+            </div>
+        </div>
     </div>
-  );
-
+    );
 }
 
 export default Modal;

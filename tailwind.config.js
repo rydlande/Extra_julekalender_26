@@ -27,6 +27,21 @@ module.exports = {
         'ExtraRound-Medium': ['ExtraRound-Medium', 'sans-serif'],
         'Romy': ['Romy', 'sans-serif'],
       },
+      keyframes: {
+        fly: {
+          '0%': { transform: 'translateX(-100%)', top: '30%' },
+          '100%': { transform: 'translateX(100vw)', top: '20%' },
+        },
+        flyReverse: {
+          '0%': { transform: 'translateX(100vw)', top: '50%', opacity: '0' },
+          '10%': { opacity: '1' },
+          '100%': { transform: 'translateX(-100%)', top: '60%', opacity: '1' },
+        },
+      },
+      animation: {
+        fly: 'fly 10s linear forwards',
+        'fly-reverse': 'flyReverse 10s linear forwards',
+      },
     },
   },
   plugins: [
