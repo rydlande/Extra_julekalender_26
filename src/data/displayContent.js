@@ -1,4 +1,27 @@
-import luke1 from '../assets/luke1.mp4'
+import luke1 from '../assets/luke1_film.mp4'
+import luke2 from '../assets/luke1.mp4'
+import luke3 from '../assets/luke1.mp4'
+import luke4 from '../assets/luke4_julebrus.png'
+import luke5 from '../assets/luke5_meme.gif'
+import luke6 from '../assets/luke6_DanielKvammen_Synger.mp4'
+import luke7 from '../assets/luke7_v2.png'
+import luke8 from '../assets/luke1.mp4'
+import luke9 from '../assets/luke1.mp4'
+import luke10 from '../assets/luke10_meme.jpg'
+import luke11 from '../assets/luke11_gjettlyden.mp4'
+import luke12 from '../assets/luke1.mp4'
+import luke13 from '../assets/luke1.mp4'
+import luke14 from '../assets/luke1.mp4'
+import luke15 from '../assets/luke15_gåte.gif'
+import luke16 from '../assets/luke16_meme.png'
+import luke17 from '../assets/luke1.mp4'
+import luke18 from '../assets/luke1.mp4'
+import luke19 from '../assets/Luke19_V1.png'
+import luke20 from '../assets/luke1.mp4'
+import luke21 from '../assets/luke1.mp4'
+import luke22 from '../assets/luke1.mp4'
+import luke23 from '../assets/luke23_grevinnenoghovmesteren_loop.mp4'
+import luke24 from '../assets/luke1.mp4'
 
 export const dailyContent = {
     1: { 
@@ -10,58 +33,60 @@ export const dailyContent = {
         type: 'text',
         format: 'paragraphs',
         paragraphs: [
-            { text: 'Ny podcast-episode', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
-            { text: '<a href="https://podcasts.helloaudio.fm/player?episodeId=657ddfde-06ba-4c04-9790-d2696690973e&code=OPs83Jlidq&centered=true" target="_blank"><span class="underline hover:text-red"">Fruktkurven: jula i F&G</span>!</br> Hør nå🍊🧡</a>', style: 'text-2xl md:text-3xl lg:text-5xl mt-4 md:mt-6 lg:mt-8 mb-2 md:mb-4 lg:mb-6' },
+            { text: 'Gi kassa en skikkelig julemakeover, del bilde på Viva og vinn en premie til hele butikken! ✨ ', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
         ],
     },
     3: {
         type: 'text',
-        format: 'flipping-card',
-        heightClass: 'h-[420px] md:h-[470px] lg:h-[670px]',
+        format: 'paragraphs',
+        //heightClass: 'h-[420px] md:h-[470px] lg:h-[670px]',
         front: [
-            { text: 'Tre nøtter: Hvilke julesanger er dette? Knekk nøttene for å se!', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
+            { text: 'Klarer du å finne hva som mangler på bilde nr. 2? 👀', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
             { text: '🌰', style: 'text-8xl lg:text-9xl rotate-[25deg] mr-20 lg:mr-20 mt-12 md:mt-10 lg:mt-24' },
-            { text: '🌰', style: 'text-8xl lg:text-9xl rotate-[55deg] -mr-20 lg:-mr-24 -mt-[84px] lg:-mt-[110px]' },
-            { text: '🌰', style: 'text-8xl lg:text-9xl rotate-[35deg] mr-6 lg:mr-6 -mt-16 lg:-mt-20' },
-            { text: 'Kommenter løsningen i kommentarfeltet til dagens luke på Viva ⭐️', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-12 md:mt-12 lg:mt-24 mb-2 md:mb-4 lg:mb-6' },
-        ],
-        back: [
-            { text: 'Tre nøtter: Hvilke julesanger er dette? Knekk nøttene for å se!', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
-            { text: '1: 🌰🔥', style: 'text-5xl lg:text-7xl mt-8 lg:mt-12'},
-            { text: '2: 🐤🍐🌳', style: 'text-5xl lg:text-7xl mt-4'},
-            { text: '3: 🫴🏻🌽🍿', style: 'text-5xl lg:text-7xl mt-4'},
-            { text: 'Kommenter løsningen i kommentarfeltet til dagens luke på Viva ⭐️', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-8 lg:mt-[89px] mb-2 md:mb-4 lg:mb-6' },
+            { text: 'Kommenter svaret på Viva!', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-12 md:mt-12 lg:mt-24 mb-2 md:mb-4 lg:mb-6' },
         ],
     },
     4: {
         type: 'text',
         format: 'paragraphs',
         paragraphs: [
-            { text: 'Vi trenger mer inspirasjon!', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
-            { text: 'Legg ut et bilde fra butikken for å være med i trekningen av fin premie 🎁', style: 'text-2xl md:text-3xl lg:text-5xl mt-4 md:mt-6 lg:mt-8' },
-            { text: 'Merk med #extrajul', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-12 lg:mt-24 mb-2 md:mb-4 lg:mb-6' },
+            { text: 'JULENS HETESTE DISKUSJON 🔥', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
+            { text: 'Rød eller brun julebrus?', style: 'text-2xl md:text-3xl lg:text-5xl mt-4 md:mt-6 lg:mt-8' },
+            {
+                image: '/src/assets/luke4_julebrus.png', 
+                alt: '', 
+                style: 'mt-4 md:mt-6 lg:mt-8 w-full h-auto',
+            },
+            { text: 'Legg igjen din stemme i dagens post på Viva', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-4 md:mt-8 lg:mt-16 mb-2 md:mb-4 lg:mb-6' },
         ],
     },
     5: {
         type: 'text',
         format: 'paragraphs',
         paragraphs: [
-        { text: 'Gåte', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
-        { text: 'De danser rundt meg, men ikke med meg. Jeg har én fot, men ingen tær. Hvem er jeg?', style: 'text-2xl md:text-3xl lg:text-5xl mt-4 md:mt-6 lg:mt-8' },
-        { text: 'Kommenter løsningen i kommentarfeltet til dagens luke på Viva ⭐️', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-12 lg:mt-24 md:mb-4 lg:mb-6' },
-        ]
+            { text: 'Når du innser at det bare er 19 dager igjen til jul:', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
+            {
+                image: '/src/assets/luke5_meme.gif', 
+                alt: '', 
+                style: 'mt-4 md:mt-6 lg:mt-8 w-full h-auto',
+            },
+        ],
     },
     6: {
         type: 'text',
         format: 'paragraphs',
         paragraphs: [
-            { text: 'Rampenissen har vært ute på sprell i pauserommet. Hva har han funnet på?', style: 'text-2xl md:text-3xl lg:text-5xl mt-11 md:mt-14 lg:mt-24' },
-            { text: 'Ta bilde og vis oss, del på Viva 📸', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-12 lg:mt-24 mb-2 md:mb-4 lg:mb-6' }
-        ]
+            { text: 'Ruud som tidstyven eller rampenissen. Bilde av han med nisselue stående i butikken hvor han har lagt alle varene i en hylle opp ned. Med teksten "Litt hyss hører til i julestria. Kanskje du skal overraske kolleagene dine med noe sprell? Bare legg skylda på meg"', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
+            {
+                video: '/src/assets/luke6_DanielKvammen_Synger.mp4', 
+                alt: '', 
+                style: 'mt-4 md:mt-6 lg:mt-8 w-full h-auto',
+            },
+        ],
     },
     7: {
-        type: 'video', 
-        src: '', 
+        type: 'image', 
+        src: luke7, 
         description: '' 
     },
     8: {
@@ -79,17 +104,13 @@ export const dailyContent = {
     },
     10: {
         type: 'image', 
-        src: '', 
+        src: luke10, 
         description: '' 
     },
     11: {
-        type: 'text',
-        format: 'paragraphs',
-        paragraphs: [
-            { text: 'Inspirasjonstid!', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
-            { text: 'Del et bilde fra butikken for å være med i trekningen av fin premie 🎁', style: 'text-2xl md:text-3xl lg:text-5xl mt-4 md:mt-6 lg:mt-8' },
-            { text: 'Merk med #extrajul', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-12 lg:mt-24 mb-2 md:mb-4 lg:mb-6' },
-        ]
+        type: 'video',
+        src: luke11,
+        description: ''
     },
     12: {
         type: 'video', 
@@ -123,21 +144,14 @@ export const dailyContent = {
         ]
     },
     15: {
-        type: 'text',
-        format: 'paragraphs',
-        paragraphs: [
-            { text: 'Hvem står bak denne oppskriften på pepperkaker?', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
-            { text: '1 kg margarin<br>1 ts farin<br>8 eggeplommer<br>1 kg hvetemel<br>1 kg pepper<br>', style: 'text-2xl md:text-3xl lg:text-5xl mt-4 md:mt-6 lg:mt-8' },
-            { text: 'Kommenter løsningen i kommentarfeltet til dagens luke på Viva ⭐️', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-12 lg:mt-24 mb-2 md:mb-4 lg:mb-6' },
-        ]
+        type: 'image',
+        src: luke15,
+        description: ''
     },
     16: {
-        type: 'text',
-        format: 'paragraphs',
-        paragraphs: [
-            { text: 'Vi trenger adjektiv til en adjektivhistorie!', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
-            { text: 'Førstemann til mølla, skriv ditt beste/ morsomste/rareste adjektiv i kommentarfeltet på Viva! ', style: 'text-2xl md:text-3xl lg:text-5xl mt-4 md:mt-6 lg:mt-8 mb-2 md:mb-4 lg:mb-6' },
-        ]
+        type: 'image',
+        src: luke16,
+        description: ''
     },
     17: {
         type: 'text',
@@ -156,8 +170,8 @@ export const dailyContent = {
         ]
     },
     19: {
-        type: 'video', 
-        src: '', 
+        type: 'image', 
+        src: luke19, 
         description: '' 
     },
     20: {
@@ -188,19 +202,9 @@ export const dailyContent = {
         description: '' 
     },
     23: {
-        type: 'text',
-        format: 'paragraphs',
-        paragraphs: [
-            { 
-                text: 'Hvor mange av navnene fra denne gamle klassiskeren husker du? 🥂', 
-                style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24',
-            },
-            { 
-                image: 'https://images.unsplash.com/photo-1480930700499-dc44aa7cb2cf?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 
-                alt: 'Christmas Wreath', 
-                style: 'mt-4 md:mt-6 lg:mt-8 w-full h-auto',
-            },
-        ],
+        type: 'video',
+        src_: luke23,
+        description: ''
     },
     24: {
         type: 'video', 
