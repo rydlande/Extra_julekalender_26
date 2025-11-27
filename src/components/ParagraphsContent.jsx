@@ -15,6 +15,15 @@ const ParagraphsContent = ({ paragraphs }) => {
             alt={item.alt || 'Image'}
             className={item.style}
           />
+        ) : item.type === 'video' ? (
+          <video
+            key={index}
+            controls
+            className={item.style}
+          >
+            <source src={item.src} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         ) : null
       )}
     </div>

@@ -1,6 +1,5 @@
 import CalendarGrid from '../components/CalendarGrid';
 import AdminGrid from '../components/AdminGrid';
-import julekalenderSvg2 from '../assets/julekalender.svg';
 import julekalenderSvg from '../assets/julekalender_logo_2025.png';
 import nisseSvg from '../assets/nisse.svg';
 import nisse2Svg from '../assets/nisse2.svg';

@@ -1,5 +1,5 @@
 const ImageContent = ({ src, description }) => (
-    <div className="relative w-full h-[500px] md:h-[750px] aspect-[9/16] bg-transparent">
+    <div className="relative w-full h-[500px] md:h-[750px] aspect-[602/510] bg-transparent">
       <img
         src={src}
         alt={description}
