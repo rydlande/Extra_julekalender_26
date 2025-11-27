@@ -3,13 +3,11 @@ import { useState } from 'react';
 const FlippingCardContent = ({ front, back }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
-  const toggleFlip = () => {
-    setIsFlipped((prev) => !prev);
-  };
+  const toggleFlip = () => setIsFlipped((prev) => !prev);
 
   return (
     <div 
-      className="relative h-full w-full" 
+      className="relative h-full w-full"
       style={{ perspective: '1000px' }}
     >
       <div
@@ -21,21 +19,35 @@ const FlippingCardContent = ({ front, back }) => {
         }}
         onClick={toggleFlip}
       >
-        {/* Front Side */}
-          <div className="absolute h-full w-full flex flex-col items-center justify-center cursor-pointer"
-            style={{
-              backfaceVisibility: 'hidden',
-              transform: 'rotateY(0deg)',
-            }}
-          >
-            {front.map((item, index) => (
-              <p key={index} className={item.style}>
-                {item.text}
-              </p>
-            ))}
+
+        {/* ---------------- FRONT SIDE ---------------- */}
+        <div
+          className="absolute h-full w-full flex flex-col items-center justify-center cursor-pointer"
+          style={{ 
+            backfaceVisibility: 'hidden',
+            transform: 'rotateY(0deg)',
+          }}
+        >
+          {front.map((item, index) => {
+            if (item.text)
+              return (
+                <p key={index} className={item.style} dangerouslySetInnerHTML={{ __html: item.text }} />
+              );
+            if (item.image)
+              return (
+                <img key={index} src={item.image} alt={item.alt || ''} className={item.style} />
+              );
+            if (item.video)
+              return (
+                <video key={index} controls className={item.style}>
+                  <source src={item.video} type="video/mp4" />
+                </video>
+              );
+            return null;
+          })}
         </div>
 
-        {/* Back Side */}
+        {/* ---------------- BACK SIDE ---------------- */}
         <div
           className="absolute inset-0 h-full w-full flex flex-col items-center justify-center cursor-pointer"
           style={{
@@ -43,16 +55,28 @@ const FlippingCardContent = ({ front, back }) => {
             transform: 'rotateY(180deg)',
           }}
         >
-            {back.map((item, index) => (
-              <p key={index} className={item.style}>
-                {item.text}
-              </p>
-            ))}
+          {back.map((item, index) => {
+            if (item.text)
+              return (
+                <p key={index} className={item.style} dangerouslySetInnerHTML={{ __html: item.text }} />
+              );
+            if (item.image)
+              return (
+                <img key={index} src={item.image} alt={item.alt || ''} className={item.style} />
+              );
+            if (item.video)
+              return (
+                <video key={index} controls className={item.style}>
+                  <source src={item.video} type="video/mp4" />
+                </video>
+              );
+            return null;
+          })}
         </div>
+
       </div>
     </div>
   );
 };
-
 
 export default FlippingCardContent;
