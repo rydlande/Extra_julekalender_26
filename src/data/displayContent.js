@@ -1,22 +1,17 @@
 import luke1 from '../assets/luke1.mp4'
+import luke3 from '../assets/julekalender_logo_2025.png'
+import luke4 from '../assets/luke4.png'
+import luke5 from '../assets/luke5.gif'
 import luke6 from '../assets/luke6.mp4'
+import luke7 from '../assets/luke7.png'
+import luke10 from '../assets/luke10.jpg'
 import luke11 from '../assets/luke11.mp4'
+import luke15 from '../assets/luke15.gif'
 import luke16 from '../assets/luke16.png'
+import luke19 from '../assets/luke19.png'
 import luke23 from '../assets/luke23.mp4'
-/*
-import luke12 from '../assets/luke1.mp4'
-import luke13 from '../assets/luke1.mp4'
-import luke14 from '../assets/luke1.mp4'
-import luke15 from '../assets/luke15_gåte.gif'
-import luke16 from '../assets/luke16_meme.png'
-import luke17 from '../assets/luke1.mp4'
-import luke18 from '../assets/luke1.mp4'
-import luke19 from '../assets/Luke19_V1.png'
-import luke20 from '../assets/luke1.mp4'
-import luke21 from '../assets/luke1.mp4'
-import luke22 from '../assets/luke1.mp4'
-import luke23 from '../assets/luke23_grevinnenoghovmesteren_loop.mp4'
-import luke24 from '../assets/luke1.mp4' */
+
+
 
 export const dailyContent = {
     1: { 
@@ -38,7 +33,7 @@ export const dailyContent = {
         paragraphs: [
             { text: 'Klarer du å finne hva som mangler på bilde nr. 2? 👀', style: 'text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
             {
-                image: '/src/assets/julekalender_logo_2025.png', 
+                image: luke3, 
                 alt: '', 
                 style: 'mt-4 md:mt-6 lg:mt-8 w-full h-auto',
             },
@@ -52,7 +47,7 @@ export const dailyContent = {
             { text: 'JULENS HETESTE DISKUSJON 🔥', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
             { text: 'Rød eller brun julebrus?', style: 'text-2xl md:text-3xl lg:text-5xl mt-4 md:mt-6 lg:mt-8' },
             {
-                image: '/src/assets/luke4.png', 
+                image: luke4, 
                 alt: '', 
                 style: 'mt-4 md:mt-6 lg:mt-8 w-full h-auto',
             },
@@ -65,7 +60,7 @@ export const dailyContent = {
         paragraphs: [
             { text: 'Når du innser at det bare er 19 dager igjen til jul:', style: 'text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
             {
-                image: '/src/assets/luke5.gif', 
+                image: luke5, 
                 alt: '', 
                 style: 'mt-4 md:mt-6 lg:mt-8 mb-2 md:mb-4 lg:mb-6 w-full h-auto',
             },
@@ -82,7 +77,7 @@ export const dailyContent = {
         paragraphs: [
             { text: 'Klarer du å finne alle nissene?', style: 'text-2xl md:text-3xl lg:text-5xl mt-11 md:mt-14 lg:mt-24' },
             {
-                image: '/src/assets/luke7.png', 
+                image: luke7, 
                 alt: '', 
                 style: 'mt-2 md:mt-4 lg:mt-6 w-full h-auto',
             },
@@ -111,7 +106,7 @@ export const dailyContent = {
         paragraphs: [
             { text: 'Hvordan det føles å ha fri fra jobb en dag i julestria:', style: 'text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
             {
-                image: '/src/assets/luke10.jpg',
+                image: luke10,
                 alt: '', 
                 style: 'mt-4 md:mt-6 lg:mt-8 mb-2 md:mb-4 lg:mb-6 w-full h-auto',
             },
@@ -173,7 +168,7 @@ export const dailyContent = {
         ],
         back: [
             {
-                image: '/src/assets/luke15.gif', 
+                image: luke15, 
                 alt: 'Mariah Carey synger "youuu"', 
                 description: 'Mariah Carey synger "youuu"', 
             },
@@ -205,7 +200,7 @@ export const dailyContent = {
         paragraphs: [
             { text: 'Er det noe du synes mangler på julebordet?', style: 'text-2xl md:text-3xl lg:text-5xl mt-9 md:mt-11 lg:mt-14' },
             {
-                image: '/src/assets/luke19.png', 
+                image: luke19, 
                 alt: '', 
                 style: 'mt-2 md:mt-4 lg:mt-6 w-full h-auto',
             },
