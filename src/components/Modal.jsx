@@ -29,7 +29,7 @@ function Modal({ content, onClose, luke }) {
                 &times;
                 </button>
 
-                {content.type === 'video' && <VideoContent src={content.src} />}
+                {content.type === 'video' && <VideoContent src={content.src} aspectRatio={content.aspectRatio} height={content.height} />}
                 {content.type === 'image' && <ImageContent src={content.src} description={content.description} />}
                 {content.type === 'text' && content.format === 'paragraphs' && (
                     <ParagraphsContent paragraphs={content.paragraphs} />
