@@ -1,15 +1,21 @@
 import luke1 from '../assets/luke1.mp4'
-import luke3 from '../assets/julekalender_logo_2025.png'
+import luke31 from '../assets/luke3-1.png'
+import luke32 from '../assets/luke3-2.png'
 import luke4 from '../assets/luke4.png'
 import luke5 from '../assets/luke5.gif'
 import luke6 from '../assets/luke6.mp4'
 import luke7 from '../assets/luke7.png'
 import luke10 from '../assets/luke10.jpg'
 import luke11 from '../assets/luke11.mp4'
+import luke13 from '../assets/luke13.mp4'
 import luke15 from '../assets/luke15.gif'
 import luke16 from '../assets/luke16.png'
+import luke17 from '../assets/luke17.mp4'
 import luke19 from '../assets/luke19.png'
-import luke23 from '../assets/luke23.mp4'
+import luke21 from '../assets/luke21.mp4'
+import luke22 from '../assets/luke22.mp4'
+import luke23 from '../assets/luke23.gif'
+import luke24 from '../assets/luke24.mp4'
 
 
 
@@ -18,26 +24,38 @@ export const dailyContent = {
         type: 'video', 
         src: luke1,
         description: 'Introduksjon til Extras julekalender',
+        aspectRatio: 'aspect-[4/5]',
+        height: 'h-[500px] md:h-[750px]'
     },
     2: {
         type: 'text',
         format: 'paragraphs',
         paragraphs: [
-            { text: 'Gi kassa en skikkelig julemakeover', style: 'text-2xl md:text-3xl lg:text-5xl mt-11 md:mt-14 lg:mt-24' },
-            { text: 'Del bilde på Viva og vinn en premie til hele butikken! ✨ ', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-12 lg:mt-24 mb-2 md:mb-4 lg:mb-6' },
+            { text: 'Gi kassa en skikkelig julemakeover ❤️', style: 'text-2xl md:text-3xl lg:text-5xl mt-11 md:mt-14 lg:mt-24' },
+            { text: 'Del bilde på Viva og vinn en premie til hele butikken!', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-12 lg:mt-24 mb-2 md:mb-4 lg:mb-6' },
         ]
     },
     3: {
         type: 'text',
-        format: 'paragraphs',
-        paragraphs: [
-            { text: 'Klarer du å finne hva som mangler på bilde nr. 2? 👀', style: 'text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
+        format: 'flipping-card',
+        heightClass: 'h-[500px] md:h-[570px] lg:h-[820px]',
+        front: [
+            { text: 'Klarer du å finne hva de 10 feilene? 👀 Trykk på bildet for å flippe det!', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
             {
-                image: luke3, 
+                image: luke31, 
                 alt: '', 
                 style: 'mt-4 md:mt-6 lg:mt-8 w-full h-auto',
             },
-            { text: 'Kommenter svaret på Viva!', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-4 md:mt-6 lg:mt-8 mb-2 md:mb-4 lg:mb-6' },
+            { text: 'Kommenter svaret på Viva!', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-6 md:mt-8 lg:mt-11 mb-2 md:mb-4 lg:mb-6' },
+        ],
+        back: [
+            { text: 'Klarer du å finne hva de 10 feilene? 👀 Trykk på bildet for å flippe det!', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
+            {
+                image: luke32, 
+                alt: '', 
+                style: 'mt-4 md:mt-6 lg:mt-8 w-full h-auto',
+            },
+            { text: 'Kommenter svaret på Viva!', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-6 md:mt-8 lg:mt-11 mb-2 md:mb-4 lg:mb-6' },
         ],
     },
     4: {
@@ -51,7 +69,7 @@ export const dailyContent = {
                 alt: '', 
                 style: 'mt-4 md:mt-6 lg:mt-8 w-full h-auto',
             },
-            { text: 'Legg igjen din stemme i dagens post på Viva', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-4 md:mt-8 lg:mt-16 mb-2 md:mb-4 lg:mb-6' },
+            { text: 'Legg igjen din stemme i dagens post på Viva', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-4 md:mt-8 lg:mt-11 mb-2 md:mb-4 lg:mb-6' },
         ],
     },
     5: {
@@ -70,6 +88,8 @@ export const dailyContent = {
         type: 'video', 
         src: luke6,
         description: 'Daniel Kvammen synger en julesang',
+        aspectRatio: 'aspect-[4/5]',
+        height: 'h-[500px] md:h-[750px]'
     },
     7: {
         type: 'text',
@@ -88,7 +108,7 @@ export const dailyContent = {
         type: 'text',
         format: 'paragraphs',
         paragraphs: [
-            { text: 'Del butikkens fineste sameksponering av julevarer på Viva', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24', style: 'text-2xl md:text-3xl lg:text-5xl mt-11 md:mt-14 lg:mt-24' },
+            { text: 'Del butikkens fineste sameksponering av julevarer på Viva 📸', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24', style: 'text-2xl md:text-3xl lg:text-5xl mt-11 md:mt-14 lg:mt-24' },
             { text: 'Butikken med den mest kreative eksponeringen stikker av med en premie til gjengen! 🎁', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-12 lg:mt-24 mb-2 md:mb-4 lg:mb-6' },
         ]
     },
@@ -121,6 +141,8 @@ export const dailyContent = {
                 type: 'video', 
                 src: luke11,
                 description: 'Lyden til luke 11',
+                aspectRatio: 'aspect-[4/5]',
+                height: 'h-[500px] md:h-[750px]'
             },
             { text: 'Kommenter hva du tror lyden er under det nyeste innlegget på Viva!', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-4 md:mt-6 lg:mt-8 mb-2 md:mb-4 lg:mb-6' },
         ],
@@ -136,8 +158,10 @@ export const dailyContent = {
     },
     13: { 
         type: 'video', 
-        //src: luke1,
+        src: luke13,
         description: '',
+        aspectRatio: 'aspect-[4/5]',
+        height: 'h-[500px] md:h-[750px]'
     },
     14: {
         type: 'text',
@@ -183,8 +207,12 @@ export const dailyContent = {
     },
     17: {
         type: 'video', 
-        src: '', 
-        description: '' 
+        src: luke17,
+        description: 'Håvard danser den kjente dansen som statsministeren (Hugh Grant) gjorde i Love Actually',
+        description: 'Håvard fra Håvard',
+        aspectRatio: 'aspect-[16/9]',
+        height: 'h-[200px] md:h-[400px] lg:h-[600px]'
+
     },
     18: {
         type: 'text',
@@ -201,7 +229,7 @@ export const dailyContent = {
             { text: 'Er det noe du synes mangler på julebordet?', style: 'text-2xl md:text-3xl lg:text-5xl mt-9 md:mt-11 lg:mt-14' },
             {
                 image: luke19, 
-                alt: '', 
+                alt: 'Et bord fullt av julemat med en tallerken som er tom', 
                 style: 'mt-2 md:mt-4 lg:mt-6 w-full h-auto',
             },
             { text: ' Kommenter under innlegget på Viva og bli med i trekningen av en kurv med julevarer til hele butikken! 🧺🎅', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-2 md:mt-4 lg:mt-6 mb-2 md:mb-4 lg:mb-6' },
@@ -217,16 +245,17 @@ export const dailyContent = {
     },
     21: {
         type: 'video', 
-        src: '', 
-        description: '' 
+        src: luke21, 
+        description: 'Ronny Brede Aase mime noe julete, du kan gjette hva på Viva',
+        aspectRatio: 'aspect-[4/5]',
+        height: 'h-[500px] md:h-[750px]'
     },
     22: {
-        type: 'text',
-        format: 'paragraphs',
-        paragraphs: [
-            { text: 'Ny episode av Extra Under Lupen er ute i Coopskolen nå!', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
-            { text: '<a href="https://podcasts.helloaudio.fm/player?episodeId=657ddfde-06ba-4c04-9790-d2696690973e&code=OPs83Jlidq&centered=true" target="_blank"><span class="underline hover:text-red"">Fruktkurven: jula i F&G</span>!</br> Hør nå🍊🧡</a>', style: 'text-2xl md:text-3xl lg:text-5xl mt-4 md:mt-6 lg:mt-8 mb-2 md:mb-4 lg:mb-6' },
-        ],
+        type: 'video', 
+        src: luke22, 
+        description: 'Ronny Brede Aase svarer på AIs julequiz',
+        aspectRatio: 'aspect-[4/5]',
+        height: 'h-[500px] md:h-[750px]'
     },
     23: {
         type: 'text',
@@ -240,17 +269,18 @@ export const dailyContent = {
                 text: 'Same procedure as every year, Ruud - Kristin', 
                 style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-9 md:mt-11 lg:mt-14',
             },
-            { 
-                type: 'video', 
-                src: luke23,
-                description: 'Grevinnen og hovmesteren gif',
-                style: 'mt-4 md:mt-6 lg:mt-8 w-full h-auto',
+            {
+                image: luke23, 
+                alt: '', 
+                style: 'mt-4 md:mt-6 lg:mt-8 mb-2 md:mb-4 lg:mb-6 w-full h-auto',
             },
         ],
     },
     24: {
         type: 'video', 
-        src: '', 
-        description: '' 
+        src: luke24, 
+        description: 'Julehilsen fra Håvard',
+        aspectRatio: 'aspect-[16/9]',
+        height: 'h-[200px] md:h-[400px] lg:h-[600px]'
     }
 };
