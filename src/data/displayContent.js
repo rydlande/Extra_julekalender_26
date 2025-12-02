@@ -159,7 +159,7 @@ export const dailyContent = {
     13: { 
         type: 'video', 
         src: luke13,
-        description: '',
+        description: 'Santa Lucia feiring med tog, sang og lussekatter',
         aspectRatio: 'aspect-[4/5]',
         height: 'h-[500px] md:h-[750px]'
     },
@@ -189,6 +189,7 @@ export const dailyContent = {
         front: [
             { text: 'Gåte', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
             { text: 'Jeg har rød uniform, får lange lister og får folk til å smile. Hvem er jeg?', style: 'text-2xl md:text-3xl lg:text-5xl mt-12 md:mt-12 lg:mt-24 mb-2 md:mb-4 lg:mb-6' },
+            { text: 'Flipp kortet for svar!', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-8 lg:mt-[89px] mb-2 md:mb-4 lg:mb-6' },
         ],
         back: [
             {
@@ -203,7 +204,7 @@ export const dailyContent = {
         type: 'image', 
         src: luke16,
         description: 'Meme: Når kunden sier "god jul" og du svarer "bare hyggelig"',
-        style: 'mt-4 md:mt-6 lg:mt-8 mb-2 md:mb-4 lg:mb-6 w-full h-auto',
+        style: 'mt-4 md:mt-6 lg:mt-8 mb-2 md:mb-4 lg:mb-6 w-[200px] h-auto',
     },
     17: {
         type: 'video', 
