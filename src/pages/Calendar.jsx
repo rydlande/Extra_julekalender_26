@@ -1,5 +1,5 @@
 import CalendarGrid from '../components/CalendarGrid';
-import julekalenderSvg from '../assets/julekalender_logo_2025.png';
+import julekalenderSvg from '../assets/julekalender_logo_2026.png';
 import nisseSvg from '../assets/nisse.svg';
 import nisse2Svg from '../assets/nisse2.svg';
 import bolge from '../assets/bolge.svg'

@@ -7,13 +7,14 @@ function CalendarGrid() {
   const [selectedDay, setSelectedDay] = useState(null);
   const days = [3, 16, 10, 20, 24, 9, 15, 1, 23, 8, 4, 18, 22, 19, 11, 7, 17, 12, 5, 21, 14, 2, 13, 6];
 
-  const today = new Date();
+  const today = new Date(2026, 11, 10); // Test date: December 10, 2026.
   const currentDay = today.getDate();
   const currentMonth = today.getMonth();
 
   function isDoorOpen(day) {
     return currentMonth === 11 && day <= today.getDate();
   }
+1207
 
   const closeModal = () => {
     setSelectedDay(null);
