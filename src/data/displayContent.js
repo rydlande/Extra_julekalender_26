@@ -1,21 +1,22 @@
-import luke1 from '../assets/luke1.mp4'
-import luke31 from '../assets/luke3-1.png'
-import luke32 from '../assets/luke3-2.png'
-import luke4 from '../assets/luke4.png'
-import luke5 from '../assets/luke5.gif'
+import luke1 from '../assets/2025/luke1.mp4'
+import luke2 from '../assets/luke2.png'
+import luke31 from '../assets/2025/luke3-1.png'
+import luke32 from '../assets/2025/luke3-2.png'
+import luke4 from '../assets/2025/luke4.png'
+import luke5 from '../assets/2025/luke5.gif'
 import luke6 from '../assets/luke6.mp4'
-import luke7 from '../assets/luke7.png'
-import luke10 from '../assets/luke10.jpg'
-import luke11 from '../assets/luke11.mp4'
+import luke7 from '../assets/2025/luke7.png'
+import luke10 from '../assets/2025/luke10.jpg'
+import luke11 from '../assets/2025/luke11.mp4'
 import luke13 from '../assets/luke13.mp4'
-import luke15 from '../assets/luke15.gif'
-import luke16 from '../assets/luke16.png'
-import luke17 from '../assets/luke17.mp4'
+import luke15 from '../assets/2025/luke15.gif'
+import luke16 from '../assets/2025/luke16.png'
+import luke17 from '../assets/2025/luke17.mp4'
 import luke19 from '../assets/luke19.png'
-import luke21 from '../assets/luke21.mp4'
+import luke21 from '../assets/2025/luke21.mp4'
 import luke22 from '../assets/luke22.mp4'
-import luke23 from '../assets/luke23.gif'
-import luke24 from '../assets/luke24.mp4'
+import luke23 from '../assets/2025/luke23.gif'
+import luke24 from '../assets/2025/luke24.mp4'
 
 
 
@@ -31,9 +32,14 @@ export const dailyContent = {
         type: 'text',
         format: 'paragraphs',
         paragraphs: [
-            { text: 'Gi kassa en skikkelig julemakeover ❤️', style: 'text-2xl md:text-3xl lg:text-5xl mt-11 md:mt-14 lg:mt-24' },
-            { text: 'Del bilde på Viva og vinn en premie til hele butikken!', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-12 lg:mt-24 mb-2 md:mb-4 lg:mb-6' },
-        ]
+            { text: 'Hva har vi tatt bilde av her?', style: 'text-2xl md:text-3xl lg:text-5xl mt-11 md:mt-14 lg:mt-24' },
+            {
+                image: luke2, 
+                alt: '', 
+                style: 'mt-4 md:mt-6 lg:mt-8 w-full h-auto',
+            },
+            { text: 'Kommenter svaret på Viva!', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-4 md:mt-8 lg:mt-11 mb-2 md:mb-4 lg:mb-6' },
+        ],
     },
     3: {
         type: 'text',
