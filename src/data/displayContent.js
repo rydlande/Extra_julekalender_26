@@ -1,9 +1,7 @@
 import luke1 from '../assets/2025/luke1.mp4'
 import luke2 from '../assets/luke2.png'
-import luke31 from '../assets/2025/luke3-1.png'
-import luke32 from '../assets/2025/luke3-2.png'
-import luke4 from '../assets/2025/luke4.png'
-import luke5 from '../assets/2025/luke5.gif'
+import luke3 from '../assets/luke3.png'
+import luke5 from '../assets/luke5.png'
 import luke6 from '../assets/luke6.mp4'
 import luke7 from '../assets/2025/luke7.png'
 import luke10 from '../assets/2025/luke10.jpg'
@@ -43,46 +41,27 @@ export const dailyContent = {
     },
     3: {
         type: 'text',
-        format: 'flipping-card',
-        heightClass: 'h-[500px] md:h-[570px] lg:h-[820px]',
-        front: [
-            { text: 'Klarer du å finne hva de 10 feilene? 👀 Trykk på bildet for å flippe det!', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
-            {
-                image: luke31, 
-                alt: '', 
-                style: 'mt-4 md:mt-6 lg:mt-8 w-full h-auto',
-            },
-            { text: 'Kommenter svaret på Viva!', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-6 md:mt-8 lg:mt-11 mb-2 md:mb-4 lg:mb-6' },
-        ],
-        back: [
-            { text: 'Klarer du å finne hva de 10 feilene? 👀 Trykk på bildet for å flippe det!', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
-            {
-                image: luke32, 
-                alt: '', 
-                style: 'mt-4 md:mt-6 lg:mt-8 w-full h-auto',
-            },
-            { text: 'Kommenter svaret på Viva!', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-6 md:mt-8 lg:mt-11 mb-2 md:mb-4 lg:mb-6' },
-        ],
-    },
-    4: {
-        type: 'text',
         format: 'paragraphs',
         paragraphs: [
-            { text: 'JULENS HETESTE DISKUSJON 🔥', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
-            { text: 'Rød eller brun julebrus?', style: 'text-2xl md:text-3xl lg:text-5xl mt-4 md:mt-6 lg:mt-8' },
             {
-                image: luke4, 
+                image: luke3, 
                 alt: '', 
                 style: 'mt-4 md:mt-6 lg:mt-8 w-full h-auto',
             },
-            { text: 'Legg igjen din stemme i dagens post på Viva', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-4 md:mt-8 lg:mt-11 mb-2 md:mb-4 lg:mb-6' },
         ],
+    },
+    4: { 
+        type: 'video', 
+        src: luke1,
+        description: 'Introduksjon til Extras julekalender',
+        aspectRatio: 'aspect-[4/5]',
+        height: 'h-[500px] md:h-[750px]'
     },
     5: {
         type: 'text',
         format: 'paragraphs',
         paragraphs: [
-            { text: 'Når du innser at det bare er 19 dager igjen til jul:', style: 'text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
+            { text: 'Hvor mange nøtter ligger i krukken?', style: 'text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
             {
                 image: luke5, 
                 alt: '', 
@@ -91,24 +70,42 @@ export const dailyContent = {
         ],
     },
     6: {
-        type: 'video', 
-        src: luke6,
-        description: 'Daniel Kvammen synger en julesang',
-        aspectRatio: 'aspect-[4/5]',
-        height: 'h-[500px] md:h-[750px]'
-    },
-    7: {
         type: 'text',
         format: 'paragraphs',
         paragraphs: [
-            { text: 'Klarer du å finne alle nissene?', style: 'text-2xl md:text-3xl lg:text-5xl mt-11 md:mt-14 lg:mt-24' },
+            { text: 'To lys står tent for håp og glede', style: 'text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
+            { text: 'når morgenen er grå,', style: 'text-xl md:text-2xl lg:text-4xl' },
+            { text: 'for deg som låser opp i snøen', style: 'text-xl md:text-2xl lg:text-4xl' },
+            { text: 'og får det til å gå.', style: 'text-xl md:text-2xl lg:text-4xl' },
+            { text: 'Vi håper at du snart kan få', style: 'text-xl md:text-2xl lg:text-4xl' },
+            { text: 'en lang og rolig jul, du og', style: 'text-xl md:text-2xl lg:text-4xl' },
             {
-                image: luke7, 
-                alt: '', 
-                style: 'mt-2 md:mt-4 lg:mt-6 w-full h-auto',
+                type: 'video', 
+                src: luke6,
+                description: 'Video av brennende lys',
+                aspectRatio: 'aspect-[4/5]',
+                height: 'h-[500px] md:h-[750px]'
             },
-            { text: 'Kommenter hvor de ligger på Viva! ⭐️', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-2 md:mt-4 lg:mt-6 mb-2 md:mb-4 lg:mb-6' },
-        ]
+        ],
+    },
+    7:  {
+        type: 'text',
+        format: 'flipping-card',
+        heightClass: 'h-[420px] md:h-[470px] lg:h-[670px]',
+        front: [
+            { text: 'Gjett julesangene🎵 Knekk nøttene for å se!', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
+            { text: '🌰', style: 'text-8xl lg:text-9xl rotate-[25deg] mr-20 lg:mr-20 mt-12 md:mt-10 lg:mt-24' },
+            { text: '🌰', style: 'text-8xl lg:text-9xl rotate-[55deg] -mr-20 lg:-mr-24 -mt-[84px] lg:-mt-[110px]' },
+            { text: '🌰', style: 'text-8xl lg:text-9xl rotate-[35deg] mr-6 lg:mr-6 -mt-16 lg:-mt-20' },
+            { text: 'Kommenter hvilke sanger du tror det er i kommentarfeltet på Viva!', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-12 md:mt-12 lg:mt-24 mb-2 md:mb-4 lg:mb-6' },
+        ],
+        back: [
+            { text: 'Gjett julesangene🎵 Knekk nøttene for å se!', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
+            { text: '1: 🚂🎄🌌', style: 'text-5xl lg:text-7xl mt-8 lg:mt-12'},
+            { text: '2: 💚🎄😈', style: 'text-5xl lg:text-7xl mt-4'},
+            { text: '3: 🛫🌍🎄❤️', style: 'text-5xl lg:text-7xl mt-4'},
+            { text: 'Kommenter hvilke sanger du tror det er i kommentarfeltet på Viva!', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-6 md:mt-6 lg:mt-6 mb-4 md:mb-6 lg:mb-8' },
+        ],
     },
     8: {
         type: 'text',
