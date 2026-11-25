@@ -1,14 +1,15 @@
-import luke1 from '../assets/2025/luke1.mp4'
+import luke1 from '../assets/luke1.mp4'
 import luke2 from '../assets/luke2.png'
 import luke3 from '../assets/luke3.png'
+import luke4 from '../assets/luke4.mp4'
 import luke5 from '../assets/luke5.png'
 import luke6 from '../assets/luke6.mp4'
-import luke11 from '../assets/2025/luke11.mp4'
+import luke11 from '../assets/luke11.mp4'
 import luke13 from '../assets/luke13.mp4'
 import luke15 from '../assets/luke15.png'
+import luke18 from '../assets/luke18.mp4'
 import luke19 from '../assets/luke19.png'
 import luke20 from '../assets/luke20.mp4'
-import luke21 from '../assets/2025/luke21.mp4'
 import luke22 from '../assets/luke22.mp4'
 import luke23 from '../assets/2025/luke23.gif'
 import luke24 from '../assets/2025/luke24.mp4'
@@ -19,9 +20,9 @@ export const dailyContent = {
     1: { 
         type: 'video', 
         src: luke1,
-        description: 'Introduksjon til Extras julekalender',
-        aspectRatio: 'aspect-[4/5]',
-        height: 'h-[500px] md:h-[750px]'
+        description: 'Extrapott episode 1',
+        aspectRatio: 'aspect-video',
+        height: 'h-[180px] md:h-[360px]'
     },
     2: {
         type: 'text',
@@ -45,10 +46,10 @@ export const dailyContent = {
     },
     4: { 
         type: 'video', 
-        src: luke1,
-        description: 'Introduksjon til Extras julekalender',
-        aspectRatio: 'aspect-[4/5]',
-        height: 'h-[500px] md:h-[750px]'
+        src: luke4,
+        description: 'Extrapott episode 2',
+        aspectRatio: 'aspect-video',
+        height: 'h-[180px] md:h-[360px]'
     },
     5: {
         type: 'text',
@@ -58,7 +59,7 @@ export const dailyContent = {
             {
                 image: luke5, 
                 alt: '', 
-                style: 'mt-4 md:mt-6 lg:mt-8 mb-2 md:mb-4 lg:mb-6 w-full h-auto',
+                style: 'mt-2 md:mt-4 lg:mt-6 mb-2 md:mb-4 lg:mb-6 h-auto max-w-none -mx-4 w-[calc(100%+2rem)] md:-mx-6 md:w-[calc(100%+3rem)] lg:-mx-12 lg:w-[calc(100%+6rem)]',
             },
         ],
     },
@@ -124,7 +125,7 @@ export const dailyContent = {
         type: 'text',
         format: 'paragraphs',
         paragraphs: [
-            { text: 'Klarer du å gjette lyden?👂', style: 'text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
+            { text: 'Gjett lyden!', style: 'text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24 mb-4 md:mb-6 lg:mb-8' },
             {
                 type: 'video', 
                 src: luke11,
@@ -132,15 +133,14 @@ export const dailyContent = {
                 aspectRatio: 'aspect-[4/5]',
                 height: 'h-[500px] md:h-[750px]'
             },
-            { text: 'Kommenter hva du tror lyden er under det nyeste innlegget på Viva!', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-4 md:mt-6 lg:mt-8 mb-2 md:mb-4 lg:mb-6' },
         ],
     },
     11: { 
         type: 'video', 
-        src: luke1,
-        description: 'Introduksjon til Extras julekalender',
-        aspectRatio: 'aspect-[4/5]',
-        height: 'h-[500px] md:h-[750px]'
+        src: luke11,
+        description: 'Extrapott episode 3',
+        aspectRatio: 'aspect-video',
+        height: 'h-[180px] md:h-[360px]'
     },
     12: {
         type: 'text',
@@ -189,13 +189,22 @@ export const dailyContent = {
             },
         ],
     },
-    16: {
+    16: 
+    {
         type: 'text',
-        format: 'paragraphs',
-        paragraphs: [
+        format: 'flipping-card',
+        heightClass: 'h-[420px] md:h-[470px] lg:h-[670px]',
+        front: [
+            { text: 'Gjett julefilmen🎬', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
+            { text: '🌰', style: 'text-8xl lg:text-9xl rotate-[25deg] mr-20 lg:mr-20 mt-12 md:mt-10 lg:mt-24' },
+            { text: '🌰', style: 'text-8xl lg:text-9xl rotate-[55deg] -mr-20 lg:-mr-24 -mt-[84px] lg:-mt-[110px]' },
+            { text: '🌰', style: 'text-8xl lg:text-9xl rotate-[35deg] mr-6 lg:mr-6 -mt-16 lg:-mt-20' },
+            { text: 'Kommenter hvilke filmer du tror det er på Viva!', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-8 lg:mt-8 mb-4 md:mb-6 lg:mb-8' },
+        ],
+        back: [
             { text: 'Gjett julefilmen🎬', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
             { text: '1: 👎🎅', style: 'text-4xl lg:text-7xl mt-8 lg:mt-12'},
-            { text: '2: 🧝🍝', style: 'text-4xl lg:text-7xl mt-4'},
+            { text: '2: 🧝', style: 'text-4xl lg:text-7xl mt-4'},
             { text: '3: 🐷🐸🎄🎶', style: 'text-4xl lg:text-7xl mt-4'},
             { text: 'Kommenter hvilke filmer du tror det er på Viva!', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-8 lg:mt-8 mb-4 md:mb-6 lg:mb-8' },
         ],
@@ -209,19 +218,20 @@ export const dailyContent = {
     },
     18: { 
         type: 'video', 
-        src: luke1,
-        description: 'Introduksjon til Extras julekalender',
-        aspectRatio: 'aspect-[4/5]',
-        height: 'h-[500px] md:h-[750px]'
+        src: luke18,
+        description: 'Extrapott episode 4',
+        aspectRatio: 'aspect-video',
+        height: 'h-[180px] md:h-[360px]'
     },
     19: {
         type: 'text',
         format: 'paragraphs',
         paragraphs: [
-            { text: 'Desember er en hektisk måned i dagligvarebransjen. Mens alle andre gjør seg klare til jul, er det noen som sørger for at julen faktisk kommer på plass.', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-11 lg:mt-11' },
-            { text: 'Det er dere som låser opp døra mens det fortsatt er mørkt ute, og dere som slukker lyset når resten av byen har gått hjem. Dere fyller hyllene med ribbe, pinnekjøtt og julebrus, holder humøret oppe når køen blir lang og vet alltid hvilken hylle som skjuler en ekstra marsipangris.', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-11 lg:mt-8' },
-            { text: 'Det kan ikke sies nok, for innsatsen deres betyr alt. Handleturen er en stor del av juleforberedelsene, og dere er grunnen til at den går knirkefritt, selv på lille julaften.', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-11 lg:mt-8' },
-            { text: 'Så til alle dere fantastiske Extra-ansatte, som møter tidlig, jobber sent og hjelper kundene gjennom desember: Tusen takk.', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-11 lg:mt-8' },
+            { text: "Et julekort til dere fantastiske Extra-ansatte.", style: 'font-ExtraRound-bold text-base md:text-xl lg:text-2xl mt-8 md:mt-11 lg:mt-11' },
+            { text: 'Desember er en hektisk måned i dagligvarebransjen. Mens alle andre gjør seg klare til jul, er det noen som sørger for at julen faktisk kommer på plass.', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt- md:mt-4 lg:mt-8' },
+            { text: 'Det er dere som låser opp døra mens det fortsatt er mørkt ute, og dere som slukker lyset når resten av byen har gått hjem. Dere fyller hyllene med ribbe, pinnekjøtt og julebrus, holder humøret oppe når køen blir lang og vet alltid hvilken hylle som skjuler en ekstra marsipangris.', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-4 md:mt-4 lg:mt-8' },
+            { text: 'Det kan ikke sies nok, for innsatsen deres betyr alt. Handleturen er en stor del av juleforberedelsene, og dere er grunnen til at den går knirkefritt, selv på lille julaften.', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-4 md:mt-4 lg:mt-8' },
+            { text: 'Så til alle dere fantastiske Extra-ansatte, som møter tidlig, jobber sent og hjelper kundene gjennom desember: Tusen takk.', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-4 md:mt-4 lg:mt-8' },
         ],
     },
     20: {
@@ -253,9 +263,9 @@ export const dailyContent = {
     22: {
         type: 'video', 
         src: luke22, 
-        description: 'Ronny Brede Aase svarer på AIs julequiz',
-        aspectRatio: 'aspect-[4/5]',
-        height: 'h-[500px] md:h-[750px]'
+        description: 'Tilbakeblikk fra jubileumsåret',
+        aspectRatio: 'aspect-square',
+        height: 'h-[320px] md:h-[500px]'
     },
     23: {
         type: 'text',
@@ -282,9 +292,9 @@ export const dailyContent = {
     },
     24: { 
         type: 'video', 
-        src: luke1,
-        description: 'Introduksjon til Extras julekalender',
-        aspectRatio: 'aspect-[4/5]',
-        height: 'h-[500px] md:h-[750px]'
+        src: luke24,
+        description: 'Extrapott episode 5',
+        aspectRatio: 'aspect-video',
+        height: 'h-[180px] md:h-[360px]'
     },
 };
