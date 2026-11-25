@@ -3,14 +3,11 @@ import luke2 from '../assets/luke2.png'
 import luke3 from '../assets/luke3.png'
 import luke5 from '../assets/luke5.png'
 import luke6 from '../assets/luke6.mp4'
-import luke7 from '../assets/2025/luke7.png'
-import luke10 from '../assets/2025/luke10.jpg'
 import luke11 from '../assets/2025/luke11.mp4'
 import luke13 from '../assets/luke13.mp4'
-import luke15 from '../assets/2025/luke15.gif'
-import luke16 from '../assets/2025/luke16.png'
-import luke17 from '../assets/2025/luke17.mp4'
+import luke15 from '../assets/luke15.png'
 import luke19 from '../assets/luke19.png'
+import luke20 from '../assets/luke20.mp4'
 import luke21 from '../assets/2025/luke21.mp4'
 import luke22 from '../assets/luke22.mp4'
 import luke23 from '../assets/2025/luke23.gif'
@@ -82,7 +79,7 @@ export const dailyContent = {
             {
                 type: 'video', 
                 src: luke6,
-                description: 'Video av brennende lys',
+                description: 'Video av to brennende lys',
                 aspectRatio: 'aspect-[4/5]',
                 height: 'h-[500px] md:h-[750px]'
             },
@@ -93,49 +90,41 @@ export const dailyContent = {
         format: 'flipping-card',
         heightClass: 'h-[420px] md:h-[470px] lg:h-[670px]',
         front: [
-            { text: 'Gjett julesangene🎵 Knekk nøttene for å se!', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
+            { text: 'Gjett julesangene🎶 Knekk nøttene for å se!', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
             { text: '🌰', style: 'text-8xl lg:text-9xl rotate-[25deg] mr-20 lg:mr-20 mt-12 md:mt-10 lg:mt-24' },
             { text: '🌰', style: 'text-8xl lg:text-9xl rotate-[55deg] -mr-20 lg:-mr-24 -mt-[84px] lg:-mt-[110px]' },
             { text: '🌰', style: 'text-8xl lg:text-9xl rotate-[35deg] mr-6 lg:mr-6 -mt-16 lg:-mt-20' },
             { text: 'Kommenter hvilke sanger du tror det er i kommentarfeltet på Viva!', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-12 md:mt-12 lg:mt-24 mb-2 md:mb-4 lg:mb-6' },
         ],
         back: [
-            { text: 'Gjett julesangene🎵 Knekk nøttene for å se!', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
-            { text: '1: 🚂🎄🌌', style: 'text-5xl lg:text-7xl mt-8 lg:mt-12'},
-            { text: '2: 💚🎄😈', style: 'text-5xl lg:text-7xl mt-4'},
-            { text: '3: 🛫🌍🎄❤️', style: 'text-5xl lg:text-7xl mt-4'},
-            { text: 'Kommenter hvilke sanger du tror det er i kommentarfeltet på Viva!', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-6 md:mt-6 lg:mt-6 mb-4 md:mb-6 lg:mb-8' },
+            { text: 'Gjett julesangene🎶 Knekk nøttene for å se!', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
+            { text: '1: 🎅➡️🏙️', style: 'text-5xl lg:text-7xl mt-8 lg:mt-12'},
+            { text: '2: 🎸🔄🎄', style: 'text-5xl lg:text-7xl mt-4'},
+            { text: '3: 🔔🔔🪨', style: 'text-5xl lg:text-7xl mt-4'},
+            { text: 'Kommenter hvilke sanger du tror det er i kommentarfeltet på Viva!', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-8 lg:mt-8 mb-4 md:mb-6 lg:mb-8' },
         ],
     },
     8: {
         type: 'text',
         format: 'paragraphs',
         paragraphs: [
-            { text: 'Del butikkens fineste sameksponering av julevarer på Viva 📸', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24', style: 'text-2xl md:text-3xl lg:text-5xl mt-11 md:mt-14 lg:mt-24' },
-            { text: 'Butikken med den mest kreative eksponeringen stikker av med en premie til gjengen! 🎁', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-12 lg:mt-24 mb-2 md:mb-4 lg:mb-6' },
-        ]
+            { text: '1. Hva kalles skinnet på ribba som skal bli sprøtt?', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
+            { text: '2. Hvilken by får et stort juletre i gave fra Oslo hvert år?', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-2 md:mt-2 lg:mt-4' },
+            { text: '3. Hvor mange slag småkaker skal man ha til jul ifølge tradisjonen?', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-2 md:mt-2 lg:mt-4' },
+            { text: '4. Hva heter skomakeren i julekalenderen «Jul i Skomakergata»?', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-2 md:mt-2 lg:mt-4' },
+            { text: '5. Hvem skrev «Musevisa»?', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-2 md:mt-2 lg:mt-4 mb-4 md:mb-6 lg:mb-8' },
+        ],
     },
     9: {
         type: 'text',
         format: 'paragraphs',
         paragraphs: [
-            { text: 'I disse mørke tider, kan du være lyset i noens dag!', style: 'text-2xl md:text-3xl lg:text-5xl mt-11 md:mt-14 lg:mt-24' },
-            { text: 'Tagg en kollega i det nyeste innlegget på Viva som du synes fortjener ekstra oppmerksomhet 🕯️❤️', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-12 lg:mt-24 mb-2 md:mb-4 lg:mb-6' },
+            { text: 'Julestria er i full gang, og vi vil vite hvordan dere holder energien oppe!', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
+            { text: 'Fullfør setningen i kommentarfeltet på Viva: «Det som redder vakta i desember er …»', style: 'text-2xl md:text-3xl lg:text-5xl mt-4 md:mt-6 lg:mt-8' },
+            { text: 'Er det kaffen, julemusikken eller kollegaen som alltid har en dårlig vits på lur?', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-4 md:mt-6 lg:mt-8 mb-2 md:mb-4 lg:mb-6' },
         ]
     },
     10: {
-        type: 'text',
-        format: 'paragraphs',
-        paragraphs: [
-            { text: 'Hvordan det føles å ha fri fra jobb en dag i julestria:', style: 'text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
-            {
-                image: luke10,
-                alt: '', 
-                style: 'mt-4 md:mt-6 lg:mt-8 mb-2 md:mb-4 lg:mb-6 w-full h-auto',
-            },
-        ],
-    },
-    11: {
         type: 'text',
         format: 'paragraphs',
         paragraphs: [
@@ -150,107 +139,118 @@ export const dailyContent = {
             { text: 'Kommenter hva du tror lyden er under det nyeste innlegget på Viva!', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-4 md:mt-6 lg:mt-8 mb-2 md:mb-4 lg:mb-6' },
         ],
     },
+    11: { 
+        type: 'video', 
+        src: luke1,
+        description: 'Introduksjon til Extras julekalender',
+        aspectRatio: 'aspect-[4/5]',
+        height: 'h-[500px] md:h-[750px]'
+    },
     12: {
         type: 'text',
         format: 'paragraphs',
         paragraphs: [
-            { text: 'Gåte', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
-            { text: 'Det spises flere tonn av meg i desember hvert år. Jeg kan komme i form av noe som grynter, eller som et søtt teppe over en kake. Hvem er jeg? 🤔', style: 'text-2xl md:text-3xl lg:text-5xl mt-4 md:mt-6 lg:mt-8' },
-            { text: 'Legg igjen svaret under den siste posten på Viva ⭐️', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-12 lg:mt-24 mb-2 md:mb-4 lg:mb-6' },
+            { text: 'Gjør noe gøy for gjengen på jobb i dag!', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
+            { text: 'Pynt pauserommet, ha julegenser-dag, lag den lengste nisselue-rekka eller finn på noe helt eget.', style: 'text-2xl md:text-3xl lg:text-5xl mt-4 md:mt-6 lg:mt-8' },
+            { text: 'Del bilde eller video på Viva!', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-12 lg:mt-24 mb-2 md:mb-4 lg:mb-6' },
         ]
     },
-    13: { 
-        type: 'video', 
-        src: luke13,
-        description: 'Santa Lucia feiring med tog, sang og lussekatter',
-        aspectRatio: 'aspect-[4/5]',
-        height: 'h-[500px] md:h-[750px]'
-    },
-    14: {
-        type: 'text',
-        format: 'flipping-card',
-        heightClass: 'h-[420px] md:h-[470px] lg:h-[670px]',
-        front: [
-            { text: 'Tre nøtter: Hvilke julefilmer er dette? Knekk nøttene for å se!', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
-            { text: '🌰', style: 'text-8xl lg:text-9xl rotate-[25deg] mr-20 lg:mr-20 mt-12 md:mt-10 lg:mt-24' },
-            { text: '🌰', style: 'text-8xl lg:text-9xl rotate-[55deg] -mr-20 lg:-mr-24 -mt-[84px] lg:-mt-[110px]' },
-            { text: '🌰', style: 'text-8xl lg:text-9xl rotate-[35deg] mr-6 lg:mr-6 -mt-16 lg:-mt-20' },
-            { text: 'Legg igjen dine svar på den nyeste posten på Viva!', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-12 md:mt-12 lg:mt-24 mb-2 md:mb-4 lg:mb-6' },
-        ],
-        back: [
-            { text: 'Tre nøtter: Hvilke julefilmer er dette? Knekk nøttene for å se!', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
-            { text: '1: 🚂🎄🌌', style: 'text-5xl lg:text-7xl mt-8 lg:mt-12'},
-            { text: '2: 💚🎄😈', style: 'text-5xl lg:text-7xl mt-4'},
-            { text: '3: 🛫🌍🎄❤️', style: 'text-5xl lg:text-7xl mt-4'},
-            { text: 'Legg igjen dine svar på den nyeste posten på Viva!', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-8 lg:mt-[89px] mb-2 md:mb-4 lg:mb-6' },
-        ],
-    },
-    15: {
-        type: 'text',
-        format: 'flipping-card',
-        heightClass: 'h-[420px] md:h-[470px] lg:h-[670px]',
-        front: [
-            { text: 'Gåte', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
-            { text: 'Jeg har rød uniform, får lange lister og får folk til å smile. Hvem er jeg?', style: 'text-2xl md:text-3xl lg:text-5xl mt-12 md:mt-12 lg:mt-24 mb-2 md:mb-4 lg:mb-6' },
-            { text: 'Flipp kortet for svar!', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-8 lg:mt-[89px] mb-2 md:mb-4 lg:mb-6' },
-        ],
-        back: [
-            {
-                image: luke15, 
-                alt: 'Mariah Carey synger "youuu"', 
-                description: 'Mariah Carey synger "youuu"', 
-            },
-            { text: 'Svar: en extraansatt', style: 'text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
-        ],
-    },
-    16: {
-        type: 'image', 
-        src: luke16,
-        description: 'Meme: Når kunden sier "god jul" og du svarer "bare hyggelig"',
-        style: 'mt-4 md:mt-6 lg:mt-8 mb-2 md:mb-4 lg:mb-6 w-[200px] h-auto',
-    },
-    17: {
-        type: 'video', 
-        src: luke17,
-        description: 'Håvard danser den kjente dansen som statsministeren (Hugh Grant) gjorde i Love Actually',
-        description: 'Håvard fra Håvard',
-        aspectRatio: 'aspect-[16/9]',
-        height: 'h-[200px] md:h-[400px] lg:h-[600px]'
-
-    },
-    18: {
+    13: {
         type: 'text',
         format: 'paragraphs',
         paragraphs: [
-            { text: 'Sitter du på et skikkelig godt tips/hack til julemiddagen?', style: 'text-2xl md:text-3xl lg:text-5xl mt-11 md:mt-14 lg:mt-24' },
-            { text: 'Del det med dine kollegaer på Viva! La oss inspirere hverandre 👩‍🍳', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-12 lg:mt-24 mb-2 md:mb-4 lg:mb-6' },
-        ]
+            { text: 'Tre lys står tent. Vi lengter nå', style: 'text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
+            { text: 'mot fri fra pall og kø,', style: 'text-xl md:text-2xl lg:text-4xl' },
+            { text: 'mot dager der vi bare får', style: 'text-xl md:text-2xl lg:text-4xl' },
+            { text: 'se ut på stille snø.', style: 'text-xl md:text-2xl lg:text-4xl' },
+            { text: 'Snart er siste ribbe solgt,', style: 'text-xl md:text-2xl lg:text-4xl' },
+            { text: 'og fri fortjent, så det holdt!', style: 'text-xl md:text-2xl lg:text-4xl' },
+            {
+                type: 'video', 
+                src: luke13,
+                description: 'Video av tre brennende lys',
+                aspectRatio: 'aspect-[4/5]',
+                height: 'h-[500px] md:h-[750px]'
+            },
+        ],
+    },
+    14: { 
+        type: 'video', 
+        src: luke1,
+        description: 'Introduksjon til Extras julekalender',
+        aspectRatio: 'aspect-[4/5]',
+        height: 'h-[500px] md:h-[750px]'
+    },
+    15: {
+        type: 'text',
+        format: 'paragraphs',
+        paragraphs: [
+            { text: 'Hjelp nissen frem til julekakene!', style: 'text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
+            {
+                image: luke15,
+                alt: '', 
+                style: 'mt-4 md:mt-6 lg:mt-8 mb-2 md:mb-4 lg:mb-6 w-full h-auto',
+            },
+        ],
+    },
+    16: {
+        type: 'text',
+        format: 'paragraphs',
+        paragraphs: [
+            { text: 'Gjett julefilmen🎬', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
+            { text: '1: 👎🎅', style: 'text-4xl lg:text-7xl mt-8 lg:mt-12'},
+            { text: '2: 🧝🍝', style: 'text-4xl lg:text-7xl mt-4'},
+            { text: '3: 🐷🐸🎄🎶', style: 'text-4xl lg:text-7xl mt-4'},
+            { text: 'Kommenter hvilke filmer du tror det er på Viva!', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-8 lg:mt-8 mb-4 md:mb-6 lg:mb-8' },
+        ],
+    },
+    17: { 
+        type: 'video', 
+        src: luke1,
+        description: 'Introduksjon til Extras julekalender',
+        aspectRatio: 'aspect-[4/5]',
+        height: 'h-[500px] md:h-[750px]'
+    },
+    18: { 
+        type: 'video', 
+        src: luke1,
+        description: 'Introduksjon til Extras julekalender',
+        aspectRatio: 'aspect-[4/5]',
+        height: 'h-[500px] md:h-[750px]'
     },
     19: {
         type: 'text',
         format: 'paragraphs',
         paragraphs: [
-            { text: 'Er det noe du synes mangler på julebordet?', style: 'text-2xl md:text-3xl lg:text-5xl mt-9 md:mt-11 lg:mt-14' },
-            {
-                image: luke19, 
-                alt: 'Et bord fullt av julemat med en tallerken som er tom', 
-                style: 'mt-2 md:mt-4 lg:mt-6 w-full h-auto',
-            },
-            { text: ' Kommenter under innlegget på Viva og bli med i trekningen av en kurv med julevarer til hele butikken! 🧺🎅', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-2 md:mt-4 lg:mt-6 mb-2 md:mb-4 lg:mb-6' },
-        ]
+            { text: 'Desember er en hektisk måned i dagligvarebransjen. Mens alle andre gjør seg klare til jul, er det noen som sørger for at julen faktisk kommer på plass.', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-11 lg:mt-11' },
+            { text: 'Det er dere som låser opp døra mens det fortsatt er mørkt ute, og dere som slukker lyset når resten av byen har gått hjem. Dere fyller hyllene med ribbe, pinnekjøtt og julebrus, holder humøret oppe når køen blir lang og vet alltid hvilken hylle som skjuler en ekstra marsipangris.', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-11 lg:mt-8' },
+            { text: 'Det kan ikke sies nok, for innsatsen deres betyr alt. Handleturen er en stor del av juleforberedelsene, og dere er grunnen til at den går knirkefritt, selv på lille julaften.', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-11 lg:mt-8' },
+            { text: 'Så til alle dere fantastiske Extra-ansatte, som møter tidlig, jobber sent og hjelper kundene gjennom desember: Tusen takk.', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-11 lg:mt-8' },
+        ],
     },
     20: {
         type: 'text',
         format: 'paragraphs',
         paragraphs: [
-            { text: 'Idag er julegenser-dagen!', style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24', style: 'text-2xl md:text-3xl lg:text-5xl mt-11 md:mt-14 lg:mt-24' },
-            { text: 'Stem på den julegenseren du synes er råest ved å like! Del bilde av din julegenser under det nyeste innlegget på Viva', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-12 lg:mt-24 mb-2 md:mb-4 lg:mb-6' },
-        ]
+            { text: 'Nå brenner fire lys i rad', style: 'text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24' },
+            { text: 'og varmer alle mann,', style: 'text-xl md:text-2xl lg:text-4xl' },
+            { text: 'for hver kollega, sliten, glad,', style: 'text-xl md:text-2xl lg:text-4xl' },
+            { text: 'i byer, bygd og land.', style: 'text-xl md:text-2xl lg:text-4xl' },
+            { text: 'Nå får du fred og fri i jul,', style: 'text-xl md:text-2xl lg:text-4xl' },
+            { text: 'takk for innsatsen, du er gull!', style: 'text-xl md:text-2xl lg:text-4xl' },
+            {
+                type: 'video', 
+                src: luke20,
+                description: 'Video av fire brennende lys',
+                aspectRatio: 'aspect-[4/5]',
+                height: 'h-[500px] md:h-[750px]'
+            },
+        ],
     },
-    21: {
+    21:{ 
         type: 'video', 
-        src: luke21, 
-        description: 'Ronny Brede Aase mime noe julete, du kan gjette hva på Viva',
+        src: luke1,
+        description: 'Introduksjon til Extras julekalender',
         aspectRatio: 'aspect-[4/5]',
         height: 'h-[500px] md:h-[750px]'
     },
@@ -266,11 +266,15 @@ export const dailyContent = {
         format: 'paragraphs',
         paragraphs: [
             { 
-                text: 'Skal vi ha de beste resultatene i dagligvarebransjen til neste år også? - Andreas', 
+                text: 'Skal vi ha fantastiske resultater i Extra til neste år også, Kristin?', 
                 style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24',
             },
             { 
-                text: 'Same procedure as every year, Ruud - Kristin', 
+                text: '-Andreas', 
+                style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl',
+            },
+            { 
+                text: 'Same procedure as every year, Ruud -Kristin', 
                 style: 'font-ExtraRound-Regular text-xl md:text-2xl lg:text-4xl mt-9 md:mt-11 lg:mt-14',
             },
             {
@@ -280,11 +284,11 @@ export const dailyContent = {
             },
         ],
     },
-    24: {
+    24: { 
         type: 'video', 
-        src: luke24, 
-        description: 'Julehilsen fra Håvard',
-        aspectRatio: 'aspect-[16/9]',
-        height: 'h-[200px] md:h-[400px] lg:h-[600px]'
-    }
+        src: luke1,
+        description: 'Introduksjon til Extras julekalender',
+        aspectRatio: 'aspect-[4/5]',
+        height: 'h-[500px] md:h-[750px]'
+    },
 };
