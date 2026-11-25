@@ -37,15 +37,11 @@ export const dailyContent = {
         ],
     },
     3: {
-        type: 'text',
-        format: 'paragraphs',
-        paragraphs: [
-            {
-                image: luke3, 
-                alt: '', 
-                style: 'mt-4 md:mt-6 lg:mt-8 w-full h-auto',
-            },
-        ],
+        type: 'image',
+        src: luke3,
+        description: '',
+        aspectRatio: 'aspect-[873/1153]',
+        height: 'h-[450px] md:h-[700px]',
     },
     4: { 
         type: 'video', 
