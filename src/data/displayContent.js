@@ -22,7 +22,7 @@ export const dailyContent = {
         src: luke1,
         description: 'Extrapott episode 1',
         aspectRatio: 'aspect-video',
-        height: 'h-[180px] md:h-[360px]'
+                height: 'h-[50vw] md:h-[380px] lg:h-[480px]'
     },
     2: {
         type: 'text',
@@ -49,7 +49,7 @@ export const dailyContent = {
         src: luke4,
         description: 'Extrapott episode 2',
         aspectRatio: 'aspect-video',
-        height: 'h-[180px] md:h-[360px]'
+                height: 'h-[50vw] md:h-[380px] lg:h-[480px]'
     },
     5: {
         type: 'text',
@@ -130,8 +130,7 @@ export const dailyContent = {
                 type: 'video', 
                 src: luke11,
                 description: 'Lyden til luke 11',
-                aspectRatio: 'aspect-[4/5]',
-                height: 'h-[500px] md:h-[750px]'
+                style: 'w-full h-auto rounded-md',
             },
         ],
     },
@@ -140,7 +139,7 @@ export const dailyContent = {
         src: luke11,
         description: 'Extrapott episode 3',
         aspectRatio: 'aspect-video',
-        height: 'h-[180px] md:h-[360px]'
+                height: 'h-[50vw] md:h-[380px] lg:h-[480px]'
     },
     12: {
         type: 'text',
@@ -174,8 +173,8 @@ export const dailyContent = {
         type: 'video', 
         src: luke1,
         description: 'Introduksjon til Extras julekalender',
-        aspectRatio: 'aspect-[4/5]',
-        height: 'h-[500px] md:h-[750px]'
+        aspectRatio: 'aspect-video',
+        height: 'h-[50vw] md:h-[380px] lg:h-[480px]'
     },
     15: {
         type: 'text',
@@ -213,15 +212,15 @@ export const dailyContent = {
         type: 'video', 
         src: luke1,
         description: 'Introduksjon til Extras julekalender',
-        aspectRatio: 'aspect-[4/5]',
-        height: 'h-[500px] md:h-[750px]'
+        aspectRatio: 'aspect-video',
+        height: 'h-[50vw] md:h-[380px] lg:h-[480px]'
     },
     18: { 
         type: 'video', 
         src: luke18,
         description: 'Extrapott episode 4',
         aspectRatio: 'aspect-video',
-        height: 'h-[180px] md:h-[360px]'
+                height: 'h-[50vw] md:h-[380px] lg:h-[480px]'
     },
     19: {
         type: 'text',
@@ -257,8 +256,8 @@ export const dailyContent = {
         type: 'video', 
         src: luke1,
         description: 'Introduksjon til Extras julekalender',
-        aspectRatio: 'aspect-[4/5]',
-        height: 'h-[500px] md:h-[750px]'
+        aspectRatio: 'aspect-video',
+        height: 'h-[50vw] md:h-[380px] lg:h-[480px]'
     },
     22: {
         type: 'video', 
@@ -295,6 +294,6 @@ export const dailyContent = {
         src: luke24,
         description: 'Extrapott episode 5',
         aspectRatio: 'aspect-video',
-        height: 'h-[180px] md:h-[360px]'
+                height: 'h-[50vw] md:h-[380px] lg:h-[480px]'
     },
 };
