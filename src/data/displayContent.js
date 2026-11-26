@@ -3,13 +3,14 @@ import luke2 from '../assets/luke2.png'
 import luke3 from '../assets/luke3.png'
 import luke4 from '../assets/luke4.mp4'
 import luke5 from '../assets/luke5.png'
-import luke6 from '../assets/luke6.mp4'
+import luke6 from '../assets/luke6.gif'
+import luke10 from '../assets/luke10.mp4'
 import luke11 from '../assets/luke11.mp4'
-import luke13 from '../assets/luke13.mp4'
+import luke13 from '../assets/luke13.gif'
 import luke15 from '../assets/luke15.png'
 import luke18 from '../assets/luke18.mp4'
 import luke19 from '../assets/luke19.png'
-import luke20 from '../assets/luke20.mp4'
+import luke20 from '../assets/luke20.gif'
 import luke22 from '../assets/luke22.mp4'
 import luke23 from '../assets/2025/luke23.gif'
 import luke24 from '../assets/2025/luke24.mp4'
@@ -74,11 +75,9 @@ export const dailyContent = {
             { text: 'Vi håper at du snart kan få', style: 'text-xl md:text-2xl lg:text-4xl' },
             { text: 'en lang og rolig jul, du og', style: 'text-xl md:text-2xl lg:text-4xl' },
             {
-                type: 'video', 
-                src: luke6,
-                description: 'Video av to brennende lys',
-                aspectRatio: 'aspect-[4/5]',
-                height: 'h-[500px] md:h-[750px]'
+                image: luke6,
+                alt: 'To brennende lys',
+                style: 'mt-4 md:mt-6 lg:mt-8 mb-2 md:mb-4 lg:mb-6 w-full h-auto',
             },
         ],
     },
@@ -128,8 +127,8 @@ export const dailyContent = {
             { text: 'Gjett lyden!', style: 'text-xl md:text-2xl lg:text-4xl mt-11 md:mt-14 lg:mt-24 mb-4 md:mb-6 lg:mb-8' },
             {
                 type: 'video', 
-                src: luke11,
-                description: 'Lyden til luke 11',
+                src: luke10,
+                description: 'Lyden til luke 10',
                 style: 'w-full h-auto rounded-md',
             },
         ],
@@ -161,11 +160,9 @@ export const dailyContent = {
             { text: 'Snart er siste ribbe solgt,', style: 'text-xl md:text-2xl lg:text-4xl' },
             { text: 'og fri fortjent, så det holdt!', style: 'text-xl md:text-2xl lg:text-4xl' },
             {
-                type: 'video', 
-                src: luke13,
-                description: 'Video av tre brennende lys',
-                aspectRatio: 'aspect-[4/5]',
-                height: 'h-[500px] md:h-[750px]'
+                image: luke13,
+                alt: 'Tre brennende lys',
+                style: 'mt-4 md:mt-6 lg:mt-8 mb-2 md:mb-4 lg:mb-6 w-full h-auto',
             },
         ],
     },
@@ -244,11 +241,9 @@ export const dailyContent = {
             { text: 'Nå får du fred og fri i jul,', style: 'text-xl md:text-2xl lg:text-4xl' },
             { text: 'takk for innsatsen, du er gull!', style: 'text-xl md:text-2xl lg:text-4xl' },
             {
-                type: 'video', 
-                src: luke20,
-                description: 'Video av fire brennende lys',
-                aspectRatio: 'aspect-[4/5]',
-                height: 'h-[500px] md:h-[750px]'
+                image: luke20,
+                alt: 'Fire brennende lys',
+                style: 'mt-4 md:mt-6 lg:mt-8 mb-2 md:mb-4 lg:mb-6 w-full h-auto',
             },
         ],
     },
