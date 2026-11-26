@@ -60,8 +60,9 @@ export const dailyContent = {
             {
                 image: luke5, 
                 alt: '', 
-                style: 'mt-2 md:mt-4 lg:mt-6 mb-2 md:mb-4 lg:mb-6 h-auto max-w-none -mx-4 w-[calc(100%+2rem)] md:-mx-6 md:w-[calc(100%+3rem)] lg:-mx-12 lg:w-[calc(100%+6rem)]',
+                style: 'mt-2 md:mt-4 lg:mt-6 h-auto max-w-none -mx-4 w-[calc(100%+2rem)] md:-mx-6 md:w-[calc(100%+3rem)] lg:-mx-12 lg:w-[calc(100%+6rem)]',
             },
+            { text: 'Skriv ditt gjett i kommentarfeltet på Viva!', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mb-2 md:mb-4 lg:mb-6' }
         ],
     },
     6: {
@@ -166,12 +167,19 @@ export const dailyContent = {
             },
         ],
     },
-    14: { 
+    14: /*{ 
         type: 'video', 
         src: luke1,
         description: 'Introduksjon til Extras julekalender',
         aspectRatio: 'aspect-video',
         height: 'h-[50vw] md:h-[380px] lg:h-[480px]'
+    },*/
+    {
+        type: 'text',
+        format: 'paragraphs',
+        paragraphs: [
+            { text: 'Placeholder', style: 'text-2xl md:text-3xl lg:text-5xl mt-11 md:mt-14 lg:mt-24' },
+        ],
     },
     15: {
         type: 'text',
@@ -205,12 +213,19 @@ export const dailyContent = {
             { text: 'Kommenter hvilke filmer du tror det er på Viva!', style: 'font-ExtraRound-Regular text-base md:text-xl lg:text-2xl mt-8 md:mt-8 lg:mt-8 mb-4 md:mb-6 lg:mb-8' },
         ],
     },
-    17: { 
+    17: /*{ 
         type: 'video', 
         src: luke1,
         description: 'Introduksjon til Extras julekalender',
         aspectRatio: 'aspect-video',
         height: 'h-[50vw] md:h-[380px] lg:h-[480px]'
+    },*/
+    {
+        type: 'text',
+        format: 'paragraphs',
+        paragraphs: [
+            { text: 'Placeholder', style: 'text-2xl md:text-3xl lg:text-5xl mt-11 md:mt-14 lg:mt-24' },
+        ],
     },
     18: { 
         type: 'video', 
@@ -247,12 +262,19 @@ export const dailyContent = {
             },
         ],
     },
-    21:{ 
+    21:/*{ 
         type: 'video', 
         src: luke1,
         description: 'Introduksjon til Extras julekalender',
         aspectRatio: 'aspect-video',
         height: 'h-[50vw] md:h-[380px] lg:h-[480px]'
+    },*/
+    {
+        type: 'text',
+        format: 'paragraphs',
+        paragraphs: [
+            { text: 'Placeholder', style: 'text-2xl md:text-3xl lg:text-5xl mt-11 md:mt-14 lg:mt-24' },
+        ],
     },
     22: {
         type: 'video', 
