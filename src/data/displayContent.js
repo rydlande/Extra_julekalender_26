@@ -13,7 +13,7 @@ import luke19 from '../assets/luke19.png'
 import luke20 from '../assets/luke20.gif'
 import luke22 from '../assets/luke22.mp4'
 import luke23 from '../assets/2025/luke23.gif'
-import luke24 from '../assets/2025/luke24.mp4'
+import luke24 from '../assets/luke24.mp4'
 
 
 
